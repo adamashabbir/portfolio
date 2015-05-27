@@ -1,0 +1,78 @@
+[data-template="location"] {
+  .locations {
+    .location {
+      height: 250px;
+      height: 30vh;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      font-family: 'AvenirNextRoundedProMed';
+
+      .location-image, .location-text, .location-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .4s ease-out;
+      }
+
+      .location-image {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .location-overlay {
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5;
+      }
+
+      .location-text {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        line-height: 50px;
+        margin-top: -25px;
+        color: white;
+        z-index: 10;
+        font-size: 30px;
+      }
+
+      .location-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        margin: -75px 0 0 -75px;
+        border: 3px solid white;
+        background: rgba(0, 0, 0, 0.3);
+        //        background: transparentize($hub-green,0.3);
+
+        border-radius: 50%;
+        box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.3);
+        transition: all .4s ease-out;
+        opacity: 0;
+      }
+
+      &:hover {
+
+        .location-text {
+
+        }
+
+        .location-overlay {
+          background: rgba(0, 0, 0, 0);
+        }
+
+        .location-image {
+          transform: scale(1.1);
+        }
+
+        .location-circle {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

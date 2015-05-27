@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'AvenirNextRoundedPro-Reg';
+    src: url('/public/fonts/avenir/AvenirNextRoundedPro-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/public/fonts/avenir/AvenirNextRoundedPro-Reg.woff') format('woff'),
+    url('/public/fonts/avenir/AvenirNextRoundedPro-Reg.ttf') format('truetype'),
+    url('/public/fonts/avenir/AvenirNextRoundedPro-Reg.svg#AvenirNextRoundedPro-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('/public/fonts/proxima-nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('/public/fonts/proxima-nova/ProximaNova-Semibold.otf')  format('opentype'),
+    url('/public/fonts/proxima-nova/ProximaNova-Semibold.woff') format('woff'),
+    url('/public/fonts/proxima-nova/ProximaNova-Semibold.ttf')  format('truetype'),
+    url('/public/fonts/proxima-nova/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextRoundedProMed';
+    src: url('/public/fonts/avenir/AvenirNextRoundedProMed.eot');
+    src: url('/public/fonts/avenir/AvenirNextRoundedProMed.eot') format('embedded-opentype'),
+    url('/public/fonts/avenir/AvenirNextRoundedProMed.woff2') format('woff2'),
+    url('/public/fonts/avenir/AvenirNextRoundedProMed.woff') format('woff'),
+    url('/public/fonts/avenir/AvenirNextRoundedProMed.ttf') format('truetype'),
+    url('/public/fonts/avenir/AvenirNextRoundedProMed.svg#AvenirNextRoundedProMed') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('/public/fonts/proxima-nova/ProximaNovaRegular.eot');
+    src: url('/public/fonts/proxima-nova/ProximaNovaRegular.eot') format('embedded-opentype'),
+    url('/public/fonts/proxima-nova/ProximaNovaRegular.woff2') format('woff2'),
+    url('/public/fonts/proxima-nova/ProximaNovaRegular.woff') format('woff'),
+    url('/public/fonts/proxima-nova/ProximaNovaRegular.ttf') format('truetype'),
+    url('/public/fonts/proxima-nova/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    font-weight: bold;
+    src: url('/public/fonts/proxima-nova/ProximaNovaBold.otf') format("opentype");
+    /*src: url('/public/fonts/proxima-nova/ProximaNovaBold.eot');*/
+    /*src: url('/public/fonts/proxima-nova/ProximaNovaBold.eot') format('embedded-opentype'),*/
+    /*url('/public/fonts/proxima-nova/ProximaNovaBold.woff2') format('woff2'),*/
+    /*url('/public/fonts/proxima-nova/ProximaNovaBold.woff') format('woff'),*/
+    /*url('/public/fonts/proxima-nova/ProximaNovaBold.ttf') format('truetype'),*/
+    /*url('/public/fonts/proxima-nova/ProximaNovaBold.svg#ProximaNovaBold') format('svg');*/
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('/public/fonts/myriad-pro/MyriadProRegular.eot');
+    src: url('/public/fonts/myriad-pro/MyriadProRegular.eot') format('embedded-opentype'),
+    url('/public/fonts/myriad-pro/MyriadProRegular.woff2') format('woff2'),
+    url('/public/fonts/myriad-pro/MyriadProRegular.woff') format('woff'),
+    url('/public/fonts/myriad-pro/MyriadProRegular.ttf') format('truetype'),
+    url('/public/fonts/myriad-pro/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
