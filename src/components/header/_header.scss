@@ -10,26 +10,26 @@
     top: 0;
     left: 0;
     right: 0;
-    font-size: 15px;
+    font-size: 16px;
 
     .logo {
-      height: 50px;
+      height: 45px;
       position: absolute;
       left: 50%;
-      top: 25px;
-      margin-left: -20px;
+      top: 15px;
+      margin-left: -30px;
     }
-    .book-now {
-      position: absolute;
-      right: 30px;
-      top: 30px;
-      line-height: 35px;
-      height: 40px;
+
+    .book-now, .get-app {
+      float: right;
+      margin: 15px 15px 0 0;
+      line-height: 30px;
+      height: 35px;
       background: none;
       color: white;
-      border-radius: 40px;
+      border-radius: 35px;
       padding: 0 15px;
-      border: 3px solid white;
+      border: 1px solid white;
       transition: all .2s linear;
       cursor: pointer;
 
@@ -37,35 +37,48 @@
         background: $hub-green;
         color: #fff;
         border-color: #fff;
-        border: 3px solid $hub-green;
+        border: 1px solid $hub-green;
       }
+
     }
 
-    .discover {
+    .book-now {
+      background: none;
+      color: white;
+      border: 3px solid white;
+
+      &:hover {
+        background: $hub-green;
+        border: 3px solid $hub-green;
+
+      }
     }
 
     .menu-btn {
       position: absolute;
-      left: 30px;
-      top: 18px;
-      height: 60px;
+      left: 15px;
+      top: 15px;
+      height: 35px;
 
       .fa-bars {
-        line-height: 60px !important;
-        font-size: 31px;
-        width: 60px;
+        line-height: 35px !important;
+        font-size: 35px;
+        width: 30px;
         text-align: center;
         display: inline-block;
-        color: #fff;
+        color: white;
         cursor: pointer;
+        //background: $hub-grey;
+        border-radius: 4px;
       }
 
       .menu-txt {
-        line-height: 60px;
-        font-size: 15px;
-        display: inline-block;
+        line-height: 35px;
+        //font-size: 15px;
+        float: right;
         padding: 0 10px;
         display: none;
+        color: white;
       }
 
     }
@@ -75,58 +88,95 @@
 
 .hub-hero {
   //margin-top: 60px;
-  height: 400px;
   height: 70vh;
   position: relative;
   background-position: center;
   background-size: cover;
-  background-image: url("https://unsplash.imgix.net/photo-1415829994762-1344c5d2dbe9?fit=crop&fm=jpg&h=1575&q=75&w=1050");
 
-  iframe, video {
+
+  //background-image: url("https://unsplash.imgix.net/photo-1415829994762-1344c5d2dbe9?fit=crop&fm=jpg&h=1575&q=75&w=1050");
+
+  &:hover {
+  }
+  //iframe, video {
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  object-fit: cover;
+  //}
+
+  //img {
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //}
+}
+
+.hub-hero-img {
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  .img-fade {
     position: absolute;
-
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
+}
 
-  //  #hero-vid {
-  //    position: absolute;
-  //    bottom: 50%;
-  //    right: 50%;
-  //    -webkit-transform: translateX(-50%) translateY(-50%);
-  //    transform: translateX(-50%) translateY(-50%);
-  //    min-width: 100%;
-  //    min-height: 100%;
-  //    width: auto;
-  //    height: auto;
-  //    z-index: -1000;
-  //    overflow: hidden;
-  //  }
+//  #hero-vid {
+//    position: absolute;
+//    bottom: 50%;
+//    right: 50%;
+//    -webkit-transform: translateX(-50%) translateY(-50%);
+//    transform: translateX(-50%) translateY(-50%);
+//    min-width: 100%;
+//    min-height: 100%;
+//    width: auto;
+//    height: auto;
+//    z-index: -1000;
+//    overflow: hidden;
+//  }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
 
-  .hub-hero-txt {
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    padding: 250px 50px;
-
-  }
-
-  .tag {
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-family: 'AvenirNextRoundedProMed';
-    line-height: 32px;
-
-  }
+.hub-hero-txt {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 150px 50px;
 
 }
+
+.tag {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.discover-hub {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-top: -50px;
+}
+
+  .discover{
+    display: inline-block;
+
+  }
+

@@ -3,7 +3,7 @@
   .menu-nav {
     width: 200px;
     position: fixed;
-    z-index: 100;
+    z-index: 101;
     top: 0;
     left: 0;
     bottom: 0;
@@ -13,7 +13,7 @@
     display:none;
 
     .nav-header {
-      height: 80px;
+      height: 70px;
       background: $hub-grey;
       color: white;
       line-height: 60px;
@@ -22,7 +22,7 @@
         width: 60px;
         text-align: center;
         font-size: 18px;
-        line-height: 80px !important;
+        line-height: 70px !important;
         display: inline-block;
         cursor: pointer;
 

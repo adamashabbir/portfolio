@@ -1,30 +1,44 @@
-<div data-template="header">
+<div data-template="header" data-ng-controller="HeaderCtrl">
     <div class="header">
         <img class="logo" src="/public/img/hub_-_2nd_logo.png" alt=""/>
         <div class="book-now">
             Book
         </div>
+        <!--<div class="get-app">-->
+            <!--Get the app-->
+        <!--</div>-->
+
         <div class="menu-btn">
             <div class="fa fa-bars"></div>
-            <div class="menu-txt">MENU</div>
+            <!--<div class="menu-txt">Menu</div>-->
         </div>
     </div>
 </div>
 
 <div class="hub-hero">
-
+    <div class="hub-hero-img">
+        <!--<div>class="tag" </div>-->
+    <div class="img-fade" style="background-image:url('https://unsplash.imgix.net/photo-1415829994762-1344c5d2dbe9?fit=crop&fm=jpg&h=1575&q=75&w=1050')" ></div>
+    <div class="img-fade" style="background-image:url('https://files.slack.com/files-pri/T04HVLGHX-F052RJX9T/app_homepage_weboptimized.jpg')"></div>
+    <div class="img-fade" style="background-image:url('https://download.unsplash.com/photo-1422433555807-2559a27433bd')"></div>
+    </div>
     <!--<iframe src="https://player.vimeo.com/video/30555090?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-
-    <video id="hero-vid" autoplay loop muted>
-       <!--<source src="/public/video/hub-hero-vid.mp4" type="video/mp4"> -->
-        Your browser does not support the video tag.
-    </video>
+    <!--<video id="hero-vid" autoplay loop muted>-->
+       <!--&lt;!&ndash;<source src="/public/video/hub-hero-vid.mp4" type="video/mp4"> &ndash;&gt;-->
+        <!--Your browser does not support the video tag.-->
+    <!--</video>-->
 
     <div class="overlay">
         <div class="hub-hero-txt">
-            <div class="tag">The compact connected hotel in the heart of the city</div>
-            <div class="hub-proto-btn discover">Discover Hub</div>
+            <div class="tag">hub hotels are connected to the heart of the city</div>
+            <div class="tag">Use our hub App to enhance your stay</div>
+            <div class="tag">Compact, cosy rooms </div>
         </div>
+
+        <div class="discover-hub">
+            <div class="hub-proto-btn discover">Discover hub</div>
+        </div>
+
     </div>
 </div>
 
