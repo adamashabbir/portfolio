@@ -170,57 +170,6 @@ a {
       display: none;
       color: white; }
 
-.hub-hero {
-  height: 70vh;
-  position: relative;
-  background-position: center;
-  background-size: cover; }
-
-.hub-hero-img {
-  position: relative;
-  height: 70vh;
-  background-size: cover;
-  background-position: center; }
-  .hub-hero-img .img-fade {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center; }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3); }
-
-.hub-hero-txt {
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  padding: 150px 50px; }
-
-.tag {
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  padding: 0 30px;
-  margin-bottom: 30px;
-  font-size: 25px;
-  line-height: 32px; }
-
-.discover-hub {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  margin-top: -50px; }
-
-.discover {
-  display: inline-block; }
-
 [data-template="menu"] .menu-nav {
   width: 200px;
   position: fixed;
@@ -321,3 +270,48 @@ a {
             transform: scale(1.1); }
   [data-template="location"] .locations .location:hover .location-circle {
     opacity: 1; }
+
+[data-template="hero"] .hub-hero {
+  height: 70vh;
+  position: relative;
+  background-position: center;
+  background-size: cover; }
+[data-template="hero"] .hub-hero-img {
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center; }
+  [data-template="hero"] .hub-hero-img .img-fade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+[data-template="hero"] .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3); }
+[data-template="hero"] .hub-hero-txt {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 150px 50px; }
+[data-template="hero"] .tag {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 32px; }
+[data-template="hero"] .discover-hub {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-top: -50px; }
+[data-template="hero"] .discover {
+  display: inline-block; }
