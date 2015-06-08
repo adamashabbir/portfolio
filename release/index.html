@@ -33,20 +33,25 @@
             </div>
         </div>
         <ul>
-            <li><a href="">About Hub</a></li>
-            <li><a href=""><span class="fa fa-fw fa-angle-down pull-right"></span> Locations</a></li>
-            <li><a href=""><span class="fa fa-fw fa-angle-down pull-right"></span> Hotels</a></li>
-            <li><a href="">Our App</a></li>
-            <li><a href="">Careers</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Bio</a></li>
+            <li><a href="">Hacks</a></li>
+            <li><a href="">Collaborate</a></li>
         </ul>
+        <div class="social">
+            <li>
+                <a class="first" href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-pencil"></i></a>
+            </li>
+        </div>
     </div>
 </div>
 <div data-template="header" data-ng-controller="HeaderCtrl">
     <div class="header">
-        <img class="logo" src="/public/img/hub_-_2nd_logo.png" alt=""/>
-        <div class="book-now">
-            Book
-        </div>
+        <!--<img class="logo" src="/public/img/sprint.png" alt=""/>-->
+        <!--<div class="logo">Wadi Rum Ultra</div>-->
         <!--<div class="get-app">-->
             <!--Get the app-->
         <!--</div>-->
@@ -60,12 +65,16 @@
 
 <div data-template="hero">
 <div class="hub-hero" data-ng-controller="HeroCtrl" >
-    <div class="hub-hero-img">
-        <!--<div>class="tag" </div>-->
-        <div class="img-fade" style="background-image:url('https://unsplash.imgix.net/photo-1415829994762-1344c5d2dbe9?fit=crop&fm=jpg&h=1575&q=75&w=1050')" ></div>
-        <div class="img-fade" style="background-image:url('https://files.slack.com/files-pri/T04HVLGHX-F052RJX9T/app_homepage_weboptimized.jpg')" ></div>
-        <div class="img-fade" style="background-image:url('https://download.unsplash.com/photo-1422433555807-2559a27433bd')" ></div>
-    </div>
+    <!--<div class="hub-hero-img">-->
+        <!-- -->
+        <!--&lt;!&ndash;<div>class="tag" </div>&ndash;&gt;-->
+        <!--<div class="img-fade" style="background-image:url('/public/img/home_01.png')" ></div>-->
+        <!--<div class="img-fade" style="background-image:url('https://download.unsplash.com/28/sands.jpg')" ></div>-->
+        <!--<div class="img-fade" style="background-image:url('http://lcnlegal.com/wp-content/uploads/2014/02/Marathon-des-Sables.jpg')" ></div>-->
+    <!--</div>-->
+
+
+
     <!--<iframe src="https://player.vimeo.com/video/30555090?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
     <!--<video id="hero-vid" autoplay loop muted>-->
     <!--&lt;!&ndash;<source src="/public/video/hub-hero-vid.mp4" type="video/mp4"> &ndash;&gt;-->
@@ -74,13 +83,15 @@
     <div class="overlay">
 
         <div class="hub-hero-txt">
-            <div class="tag">hub hotels are connected to the heart of the city</div>
-            <div class="tag">Use our hub App to enhance your stay</div>
-            <div class="tag">Compact, cosy rooms</div>
+            <div class="tag">Howdy, I'm Zander Whitehurst </div>
+            <div class="about"> A designer & developer in London & NYC</div>
+            <div class="scroll">Hop down  </div>
+           <div class="scroll-icon"> <a><i class="fa fa-angle-down"></i></a></div>
+
         </div>
 
         <div class="discover-hub">
-            <div class="hub-proto-btn discover">Discover hub</div>
+            <div class="hub-proto-btn discover"></div>
         </div>
 
     </div>
@@ -90,50 +101,87 @@
 
 
 <div data-template="location">
-    <div class="locations">
-        <div class="col-xs-6">
+    <div class="locations" id="scroll">
+        <div class="col-md-6">
             <div class="row">
                 <div class="location">
-                    <div class="location-image" style="background-image:url('https://ununsplash.imgix.net/photo-1420655710207-b092e1b8abe3?fit=crop&fm=jpg&h=950&q=100&w=1250')"></div>
+                    <div class="location-image" style="background:#80CAA8"></div>
                     <div class="location-overlay"></div>
-                    <div class="location-text">London</div>
+                    <div class="location-text">Projects</div>
                     <div class="location-circle"></div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-md-6">
             <div class="row">
                 <div class="location">
-                    <div class="location-image" style="background-image:url('https://c2.staticflickr.com/4/3265/3121510184_356e896a49_b.jpg')"></div>
+                    <div class="location-image" style="background:#70BA95"></div>
                     <div class="location-overlay"></div>
-                    <div class="location-text">Edinburgh</div>
+                    <div class="location-text">Bio</div>
                     <div class="location-circle"></div>
                 </div>
             </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="location">
+                    <div class="location-image" style="background:#63AA86"></div>
+                    <div class="location-overlay"></div>
+                    <i class="fa fa-hack"></i>
+                    <div class="location-text">Hacks</div>
+                    <div class="location-circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="location">
+                    <div class="location-image" style="background:#5C9B78"></div>
+                    <div class="location-overlay"></div>
+                    <div class="location-text">Collaborate</div>
+                    <div class="location-circle"></div>
+                </div>
+            </div>
+        </div>
 
-        </div>
     </div>
 </div>
-
 <!--footer.ejs-->
-    <div data-template="footer">
-        <footer id="footer">
-        </footer>
-    </div>
+<div data-template="footer">
+    <footer id="footer">
+        <div class="col-md-12 footer-tag">
+            <a href="http://twitter.com">
+                <i class="fa fa-twitter social"></i>
+            </a>
+            <a href="http://twitter.com">
+                <i class="fa fa-linkedin social"></i>
+            </a>
+            <a href="http://twitter.com">
+                <i class="fa fa-github social"></i>
+            </a>
+            <a href="http://twitter.com">
+                <i class="fa fa-pencil social"></i>
+            </a>
+        </div>
+    </footer>
+</div>
 
-    <script>
-//        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-//            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-//                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-//        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//
-//        ga('create', 'UA-62818193-1', 'auto');
-//        ga('send', 'pageview');
-    </script>
+<script>
+    //        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    //
+    //        ga('create', 'UA-62818193-1', 'auto');
+    //        ga('send', 'pageview');
+</script>
 
-    <script src="/public/lib.js"></script>
-    <script src="/public/hub-on-hub.js"></script>
+<script>  Reveal.initialize(); </script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.js"></script>
+<script src="/public/lib.js"></script>
+<script src="/public/hub-on-hub.js"></script>
 
-    <!--<script type="text/javascript">_satellite.pageBottom();</script>-->
+
+<!--<script type="text/javascript">_satellite.pageBottom();</script>-->
 </body>
 </html>

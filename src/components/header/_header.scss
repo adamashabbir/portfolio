@@ -14,10 +14,14 @@
 
     .logo {
       height: 45px;
-      position: absolute;
-      left: 50%;
-      top: 15px;
-      margin-left: -30px;
+      /* position: absolute; */
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      /* left: 50%; */
+      /* top: 42px; */
+      margin-top: 15px;
+      text-align: center;
     }
 
     .book-now, .get-app {
@@ -25,19 +29,19 @@
       margin: 15px 15px 0 0;
       line-height: 30px;
       height: 35px;
-      background: none;
+      background: $orange;
       color: white;
       border-radius: 35px;
       padding: 0 15px;
-      border: 1px solid white;
+      border: 1px solid $orange;
       transition: all .2s linear;
       cursor: pointer;
 
       &:hover {
-        background: $hub-green;
+        background: $green;
         color: #fff;
         border-color: #fff;
-        border: 1px solid $hub-green;
+        border: 1px solid $green;
       }
 
     }
@@ -48,8 +52,8 @@
       border: 3px solid white;
 
       &:hover {
-        background: $hub-green;
-        border: 3px solid $hub-green;
+        background: $green;
+        border: 3px solid $green;
 
       }
     }

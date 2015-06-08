@@ -10,6 +10,8 @@ var gulp = require('gulp'),
     jf = require('jsonfile'),
     gutil = require('gulp-util'),
     plumber = require('gulp-plumber'),
+    //markdown = require('gulp-markdown'),
+    //reveal = require('gulp-reveal'),
     webserver = require('gulp-webserver');
 
 var paths = {
@@ -38,7 +40,8 @@ gulp.task("gen-css", function(){
 
 gulp.task("gen-css-lib", function(){
     return gulp.src([
-        'src/bower-components/bootstrap/dist/css/bootstrap.min.css'
+        'src/bower-components/bootstrap/dist/css/bootstrap.min.css',
+        'src/bower-components/reveal-js/css/theme/serif.css'
     ])
         .pipe(concat('lib.css'))
         .pipe(gulp.dest(paths.public));
@@ -59,7 +62,9 @@ gulp.task("gen-js-lib", function(){
         'src/bower-components/underscore/underscore-min.js',
         'src/bower-components/moment/moment.js',
         'src/bower-components/rxjs/dist/rx.all.js',
-        'src/bower-components/bootstrap/dist/js/bootstrap.js'
+        'src/bower-components/bootstrap/dist/js/bootstrap.js',
+        'src/bower-components/reveal-js/js/reveal.js',
+        'src/bower-components/p5/p5.min.js'
     ])
         .pipe(concat('lib.js'))
         .pipe(gulp.dest(paths.public));
@@ -73,7 +78,8 @@ gulp.task("copy-public", function(){
 
 gulp.task("gen-html", function(){
     var pages = {
-        index: ['head', 'menu', 'header', 'hero', 'location', 'footer']
+        index: ['head', 'menu', 'header', 'hero', 'location', 'footer'],
+        projects: ['head', 'menu', 'header', 'hero-project', 'footer']
     };
 
 
@@ -88,6 +94,13 @@ gulp.task("gen-html", function(){
             .pipe(gulp.dest (paths.release));
     }
 });
+
+//gulp.task('default', function () {
+//    gulp.src('index.md')
+//        .pipe(markdown())
+//        .pipe(reveal())
+//        .pipe(gulp.dest('.'));
+//});
 
 gulp.task('watch', ['webserver', 'default'], function () {
     gulp.watch([

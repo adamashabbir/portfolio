@@ -1,12 +1,14 @@
 [data-template="location"] {
   .locations {
     .location {
-      height: 250px;
-      height: 30vh;
+      height: 50vh;
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      font-family: 'AvenirNextRoundedProMed';
+
+      .row{
+        //background: #fbbc00;
+      }
 
       .location-image, .location-text, .location-overlay {
         position: absolute;
@@ -17,13 +19,8 @@
         transition: all .4s ease-out;
       }
 
-      .location-image {
-        background-position: center;
-        background-size: cover;
-      }
-
       .location-overlay {
-        background: rgba(0, 0, 0, 0.3);
+       // background: rgba(0, 0, 0, 0.3);
         z-index: 5;
       }
 
@@ -45,7 +42,7 @@
         width: 125px;
         height: 125px;
         margin: -65px 0 0 -60px;
-        border: 3px solid white;
+        border: 2px solid white;
         background: rgba(0, 0, 0, 0.3);
         //        background: transparentize($hub-green,0.3);
 

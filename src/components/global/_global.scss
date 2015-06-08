@@ -1,6 +1,6 @@
 body {
   background: white;
-  color: $hub-grey;
+  color: $grey;
   font-family: 'ProximaNovaRegular';
 //  font-family: 'AvenirNextRoundedProMed';
   font-size: 18px;
@@ -47,7 +47,7 @@ p {
 }
 
 a {
-  color: $hub-green;
+  color: $green;
 
   &:hover {
     color: inherit;
@@ -56,8 +56,8 @@ a {
 
 .hub-btn {
   font-family: 'ProximaNovaRegular';
-  background: $hub-green;
-  color: $hub-grey;
+  background: $orange;
+  color: $light;
   border-radius: 3px;
   line-height: 44px;
   height: 44px;
@@ -90,16 +90,16 @@ a {
   display: inline-block;
   cursor: pointer;
   &:hover, &.green {
-    background: $hub-green;
+    background: $green;
     color: #fff;
     border-color: #fff;
-    border: 3px solid $hub-green;
+    border: 3px solid $green;
   }
 }
 
 .hub-btn-grey {
   @extend .hub-btn;
-  background: $hub-grey;
+  background: $grey;
   color: white;
 
   &:hover {
@@ -110,13 +110,13 @@ a {
 .hub-btn-transparent {
   @extend .hub-btn;
   background: transparent;
-  color: $hub-green;
-  border: 1px solid $hub-green;
+  color: $green;
+  border: 1px solid $green;
   display: inline-block !important;
 
   &:hover {
-    background: $hub-green;
-    color: $hub-grey !important;
+    background: $green;
+    color: $grey !important;
   }
 }
 

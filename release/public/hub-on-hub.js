@@ -21,34 +21,105 @@ var app = angular.module('hub-on-hub', []);
         //        "image" : "https://download.unsplash.com/photo-1422433555807-2559a27433bd"
         //    }];
 
-
-
-
-
-        $(function () {
-            $('.img-fade:gt(0)').hide();
-            setInterval(function () {
-                    $('.img-fade:first-child').fadeOut()
-                        .next('.img-fade').fadeIn()
-                        .end().appendTo('.hub-hero-img');
-                },
-                5000);
+        $(".scroll-icon").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#scroll").offset().top
+            }, 1000);
         });
 
-        $(function () {
-            $('.tag:gt(0)').hide();
-            setInterval(function () {
-                    $('.tag:first-child').fadeOut()
-                        .next('.tag').fadeIn()
-                        .end().appendTo('.hub-hero-txt');
-                },
-                5000);
-        });
+
+
+        //$(function () {
+        //    $('.img-fade:gt(0)').hide();
+        //    setInterval(function () {
+        //            $('.img-fade:first-child').fadeOut()
+        //                .next('.img-fade').fadeIn()
+        //                .end().appendTo('.hub-hero-img');
+        //        },
+        //        5000);
+        //});
+
+        //function setup(){
+        //    canvas = createCanvas(displayWidth, displayHeight)
+        //}
+        //
+        //function draw() {
+        //    background(0);
+        //    fill(0);
+        //    ellipse(width/2,height/2,100,100);
+        //}
+
 
 
     }]);
 }());
 
+(function(){
+    app.controller('HeroProjectCtrl', ['$scope', function($scope){
+
+
+        $(document).ready(function () {
+
+
+            $(".right-nav").velocity({translateX: 50}, {loop: true},3000);
+
+
+            var fullWidth = $( window ).width();
+
+            var n = $(".slider-slide-wrap").length,
+                width = fullWidth,
+                newwidth = width * n;
+
+            $('.slide-wrap').css({
+                'width': newwidth
+            });
+
+            $(".slider-slide-wrap").each(function (i) {
+                var thiswid = fullWidth;
+                $(this).css({
+                    'left': thiswid * i
+                });
+
+            });
+            /*on scroll move the indicator 'shown' class to the
+             most visible slide on viewport
+             */
+            $('.slider-wrap').scroll(function () {
+                var scrollLeft = $(this).scrollLeft();
+                $(".slider-slide-wrap").each(function (i) {
+                    var posLeft = $(this).position().left
+                    var w = $(this).width();
+
+                    if (scrollLeft >= posLeft && scrollLeft < posLeft + w) {
+                        $(this).addClass('shown').siblings().removeClass('shown');
+                    }
+                });
+            });
+            /* on left button click scroll to the previous sibling of the current visible slide */
+            $('#slider-left').click(function () {
+                var $prev = $('.slide-wrap .shown').prev();
+
+                if ($prev.length) {
+                    $('.slider-wrap').animate({
+                        scrollLeft: $prev.position().left
+                    }, 'slow');
+                }
+            });
+            /* on right button click scroll to the next sibling of the current visible slide */
+            $('#slider-right').click(function () {
+                var $next = $('.slide-wrap .shown').next();
+
+                if ($next.length) {
+                    $('.slider-wrap').animate({
+                        scrollLeft: $next.position().left
+                    }, 'slow');
+                }
+            });
+        });
+
+
+    }]);
+}());
 (function () {
     app.controller('MenuCtrl', ['$scope', function ($scope) {
 

@@ -1,4 +1,28 @@
 [data-template="footer"] {
   #footer {
+    background: #FDBB11;
+    text-align: center;
   }
+
+  .footer-tag{
+    height: 10vh;
+    background: #FDBB11;
+    text-align: center;
+  }
+
+    .social{
+      display: inline-block;
+      margin: 25px 25px 0 25px;
+      color: white;
+      cursor: pointer;
+
+      :hover{
+        color: #56E2D1;
+        background: #56E2D1;
+      }
+
+      a{
+        text-decoration: none;
+      }
+    }
   }

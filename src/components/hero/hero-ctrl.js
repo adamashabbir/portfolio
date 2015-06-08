@@ -14,29 +14,34 @@
         //        "image" : "https://download.unsplash.com/photo-1422433555807-2559a27433bd"
         //    }];
 
-
-
-
-
-        $(function () {
-            $('.img-fade:gt(0)').hide();
-            setInterval(function () {
-                    $('.img-fade:first-child').fadeOut()
-                        .next('.img-fade').fadeIn()
-                        .end().appendTo('.hub-hero-img');
-                },
-                5000);
+        $(".scroll-icon").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#scroll").offset().top
+            }, 1000);
         });
 
-        $(function () {
-            $('.tag:gt(0)').hide();
-            setInterval(function () {
-                    $('.tag:first-child').fadeOut()
-                        .next('.tag').fadeIn()
-                        .end().appendTo('.hub-hero-txt');
-                },
-                5000);
-        });
+
+
+        //$(function () {
+        //    $('.img-fade:gt(0)').hide();
+        //    setInterval(function () {
+        //            $('.img-fade:first-child').fadeOut()
+        //                .next('.img-fade').fadeIn()
+        //                .end().appendTo('.hub-hero-img');
+        //        },
+        //        5000);
+        //});
+
+        //function setup(){
+        //    canvas = createCanvas(displayWidth, displayHeight)
+        //}
+        //
+        //function draw() {
+        //    background(0);
+        //    fill(0);
+        //    ellipse(width/2,height/2,100,100);
+        //}
+
 
 
     }]);
