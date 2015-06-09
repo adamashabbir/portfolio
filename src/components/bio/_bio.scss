@@ -1,0 +1,56 @@
+[data-template = "bio"]{
+
+  .bio{
+    height: 100vh;
+    background: #FFDA00;
+  }
+
+  .pad{
+    padding: 0;
+  }
+
+  .name{
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    padding: 20px 0;
+  }
+
+  .ed{
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    padding: 30px 0;
+    background: grey;
+    color: #FFDA00;
+  }
+
+
+  .uni-icon{
+    margin: 65px 40px;
+    color: white;
+  }
+
+  .uni{
+    border-right: 1px solid grey;
+    text-align: right;
+    padding: 20px 0;
+    margin: 10px 0;
+
+    .uni-tag{
+      margin-right: 40px;
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+  }
+
+  .uni-info{
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+    margin: 30px;
+  }
+
+
+}

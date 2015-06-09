@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+  [data-template="hero-project"] {
+
+    .hero-project{
+
+    }
+    .slider-wrap{
+
+    }
+
+    .slider-nav{
+    }
+
+    #slider-left{
+
+    }
+    #slider-right{
+
+    }
+
+    .slide-wrap{
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .slider-slide-wrap{
+
+    }
+
+    .projects{
+      top: 39%;
+      font-size: 40px;
+    }
+
+    .project-nav{
+      top: 47%;
+      font-size: 14px;
+      margin: 0 25px;
+
+      .left-nav{
+
+      }
+    }
+
+    .project-overlay{
+      top: 10%;
+      right: 15%;
+      bottom: 10%;
+      left: 15%;
+      .project-title{
+        margin: 5px 10px;
+        font-size: 22px;
+      }
+
+      .project-p{
+        margin: 5px 10px 0 10px;
+        font-size: 20px;
+      }
+
+      .project-tech{
+        margin: 10px 10px 0 10px;
+        font-size: 22px;
+      }
+
+      .project-stack{
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+      .project-more{
+        margin: 10px 10px 0 10px;
+        font-size: 22px;
+      }
+
+      .project-site {
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+      .project-press{
+        margin: 10px 10px 0 10px;
+        font-size: 22px;
+      }
+
+      .project-pack{
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+
+    }
+
+  }
+
+  }

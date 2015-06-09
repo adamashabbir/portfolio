@@ -65,6 +65,7 @@ gulp.task("gen-js-lib", function(){
         'src/bower-components/bootstrap/dist/js/bootstrap.js',
         'src/bower-components/reveal-js/js/reveal.js',
         'src/bower-components/p5/p5.min.js'
+
     ])
         .pipe(concat('lib.js'))
         .pipe(gulp.dest(paths.public));
@@ -79,7 +80,9 @@ gulp.task("copy-public", function(){
 gulp.task("gen-html", function(){
     var pages = {
         index: ['head', 'menu', 'header', 'hero', 'location', 'footer'],
-        projects: ['head', 'menu', 'header', 'hero-project', 'footer']
+        projects: ['head', 'menu', 'header', 'hero-project', 'footer'],
+        collaborate: ['head', 'menu', 'header', 'collaborate', 'footer'],
+        bio: ['head', 'menu', 'header', 'bio', 'footer']
     };
 
 

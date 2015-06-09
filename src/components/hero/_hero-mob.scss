@@ -1,0 +1,31 @@
+@media(max-width: 767px){
+  [data-template="hero"]{
+
+    .hub-hero{
+
+    }
+
+    .hub-hero-text{
+      font-size: 18px;
+    }
+
+    .tag{
+      font-size: 28px;
+      top: 45%
+    }
+
+    .about{
+      font-size: 20px;
+    }
+
+    .scroll{
+      top: 85%;
+      font-size: 12px;
+    }
+
+    .scroll-icon{
+      top: 87%;
+    }
+
+  }
+}
