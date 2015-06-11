@@ -60,6 +60,41 @@
         //});
 
 
+        //$(window).scroll(function() {
+        //    var windowWidth = $(this).width();
+        //    var windowHeight = $(this).height();
+        //    var windowScrollTop = $(this).scrollTop();
+        //
+        //
+        //    var secondAnimation = function () {
+        //        $('.skill:eq(0)').delay(1000).animate({opacity: 1}, 'slow');
+        //    };
+        //});
+
+        //jQuery(function($) {
+        //    function fixDiv() {
+        //        var $cache = $('.ed');
+        //        if ($(window).scrollTop() > 75){
+        //            $cache.css(
+        //                position: 'fixed',
+        //                top: '0px',
+        //                'left': '0px',
+        //                'right': '0px',
+        //                'z-index': '98'
+        //            )
+        //            //$('.bio').css({
+        //            //    'display': 'none'
+        //            //});
+        //
+        //        else
+        //            $cache.css({
+        //                'position': 'relative',
+        //                'top': 'auto'
+        //            });
+        //    }
+        //    $(window).scroll(fixDiv);
+        //    fixDiv();
+        //});
 
     }]);
 }());

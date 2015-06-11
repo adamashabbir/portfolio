@@ -63,7 +63,6 @@ gulp.task("gen-js-lib", function(){
         'src/bower-components/moment/moment.js',
         'src/bower-components/rxjs/dist/rx.all.js',
         'src/bower-components/bootstrap/dist/js/bootstrap.js',
-        'src/bower-components/reveal-js/js/reveal.js',
         'src/bower-components/p5/p5.min.js'
 
     ])
@@ -82,7 +81,7 @@ gulp.task("gen-html", function(){
         index: ['head', 'menu', 'header', 'hero', 'location', 'footer'],
         projects: ['head', 'menu', 'header', 'hero-project', 'footer'],
         collaborate: ['head', 'menu', 'header', 'collaborate', 'footer'],
-        bio: ['head', 'menu', 'header', 'bio', 'footer']
+        bio: ['head', 'menu', 'header', 'bio', 'bio-ed', 'bio-skill', 'footer']
     };
 
 

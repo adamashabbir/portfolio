@@ -1,0 +1,43 @@
+<div data-template="bio-ed" ng-controller="BioEdCtrl">
+    <div class="col-md-12 pad">
+        <div class="ed">
+            Education
+        </div>
+</div>
+
+
+    <div class="uni-wrap">
+        <div class="row" ng-repeat="item in education" >
+            <div class="col-md-1">
+                <div class="uni-icon">
+                    <i class=" fa fa-graduation-cap fa-3x"></i>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="uni">
+
+                    <div class="uni-tag">
+                        {{item.degree}}
+                    </div>
+                    <div class="uni-tag">
+                        {{item.uni}}
+                    </div>
+                    <div class="uni-tag">
+                        {{item.subject}}
+                    </div>
+                    <div class="uni-tag">
+                        {{item.year}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="uni-info">
+                   {{item.sum}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

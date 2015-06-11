@@ -545,51 +545,101 @@ a {
   height: 75px;
   background: lightseagreen;
   cursor: pointer; }
-[data-template="bio"] .btn {
-  cursor: pointer; }
-[data-template="bio"] .pad {
-  padding: 0; }
-[data-template="bio"] .break {
-  height: 200px; }
-[data-template="bio"] .uni-wrap {
-  position: relative; }
 [data-template="bio"] .name {
   text-align: center;
   line-height: 35px;
   font-size: 35px;
   padding: 13px 0;
   color: white; }
-[data-template="bio"] .ed {
+[data-template="bio"] .btn {
+  cursor: pointer; }
+[data-template="bio"] .pad {
+  padding: 0; }
+
+[data-template="bio-skill"] .pad {
+  padding: 0; }
+[data-template="bio-skill"] .skills {
   text-align: center;
   line-height: 40px;
   font-size: 40px;
   padding: 30px 0;
-  background: rgba(32, 178, 170, 0.5);
-  color: grey;
+  background: #1FA097;
+  color: white;
   cursor: pointer;
-  margin: 0 auto; }
-  [data-template="bio"] .ed:hover {
+  margin: 0 auto;
+  margin-top: 75px; }
+  [data-template="bio-skill"] .skills:hover {
     background: rgba(32, 178, 170, 0.8); }
-[data-template="bio"] .uni-icon {
+[data-template="bio-skill"] .key {
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  [data-template="bio-skill"] .key .dots {
+    display: inline;
+    text-align: center;
+    padding: 0px 50px;
+    line-height: 150px; }
+    [data-template="bio-skill"] .key .dots strong {
+      padding-left: 20px; }
+[data-template="bio-skill"] .design-circle {
+  color: orangered; }
+[data-template="bio-skill"] .developer-circle {
+  color: purple; }
+[data-template="bio-skill"] .hard-circle {
+  color: #DA70D6; }
+[data-template="bio-skill"] .management-circle {
+  color: #FFB300; }
+[data-template="bio-skill"] .skill-col {
+  height: 1200px; }
+  [data-template="bio-skill"] .skill-col .skill {
+    font-size: 25px;
+    line-height: 70px;
+    padding: 0 25px;
+    margin: 0 75px;
+    border-bottom: 1px solid grey;
+    color: grey; }
+    [data-template="bio-skill"] .skill-col .skill strong {
+      padding-left: 25px; }
+    [data-template="bio-skill"] .skill-col .skill .circle {
+      color: cadetblue; }
+
+[data-template="bio-ed"] .uni-wrap {
+  position: relative; }
+[data-template="bio-ed"] .pad {
+  padding: 0; }
+[data-template="bio-ed"] .ed {
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  padding: 30px 0;
+  background: #1FA097;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 75px; }
+  [data-template="bio-ed"] .ed:hover {
+    background: rgba(32, 178, 170, 0.8); }
+[data-template="bio-ed"] .uni-icon {
   position: relative;
   margin: 65px 40px;
   color: lightseagreen; }
-[data-template="bio"] .uni {
+[data-template="bio-ed"] .uni {
   position: relative;
   border-right: 1px solid grey;
   text-align: right;
   padding: 20px 0;
   margin: 10px 0; }
-  [data-template="bio"] .uni .uni-tag {
+  [data-template="bio-ed"] .uni .uni-tag {
     margin-right: 40px;
     font-size: 22px;
     line-height: 40px; }
-[data-template="bio"] .uni-info {
+[data-template="bio-ed"] .uni-info {
   font-size: 20px;
   line-height: 25px;
   padding: 10px 0;
   margin: 30px; }
-[data-template="bio"] .experience {
+[data-template="bio-ed"] .experience {
   text-align: center;
   line-height: 40px;
   font-size: 40px;
@@ -597,17 +647,22 @@ a {
   background: rgba(32, 178, 170, 0.2);
   color: grey;
   cursor: pointer; }
-  [data-template="bio"] .experience:hover {
+  [data-template="bio-ed"] .experience:hover {
     background: rgba(32, 178, 170, 0.4); }
-[data-template="bio"] .work {
+[data-template="bio-ed"] .work {
   height: 400px;
   background: white;
   border-right: 1px solid grey;
   border-bottom: 1px solid grey; }
-  [data-template="bio"] .work img {
+  [data-template="bio-ed"] .work img {
+    position: absolute;
+    display: inline;
     width: 75px;
-    margin: 0 auto; }
-  [data-template="bio"] .work .and {
+    margin: auto auto;
+    top: 50%;
+    left: 50%; }
+  [data-template="bio-ed"] .work .cp {
+    margin: -60px 0 0 -40px; }
+  [data-template="bio-ed"] .work .and {
     width: 150px;
-    margin: 0 auto; }
-
+    margin: -30px 0 0 -75px; }
