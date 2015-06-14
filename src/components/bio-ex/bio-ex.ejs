@@ -1,19 +1,19 @@
-<div data-template="BioEd" ng-controller="BioEdCtrl">
+<div data-template="BioEd" ng-controller="BioExCtrl">
 
-    <div class="bio-ed">
+    <div class="bio-ex">
         <div class="bio-ed-title">
             <div class="col-md-12 pad">
                 <div class="ex">
-                    Education
+                    Experience
                 </div>
             </div>
         </div>
 
-        <div class="company" ng-repeat="item in education">
+        <div class="company" ng-repeat="item in work">
             <div class="col-md-2">
                 <div class="company-logo">
                     <div class="logo">
-                        <i class="fa fa-graduation-cap fa-3x"></i>
+                        <img class="logo-img" src="{{item.img}}" alt="logo" style="width: 100px">
                     </div>
                 </div>
             </div>
@@ -21,10 +21,10 @@
             <div class="col-md-3">
                 <div class="ed-uni">
                     <div class="ed-info">
-                    <div class="ed">{{item.degree}}</div>
-                    <div class="ed">{{item.uni}}</div>
-                    <div class="ed">{{item.subject}}</div>
-                    <div class="ed">{{item.year}}</div>
+                        <div class="ed">{{item.role}}</div>
+                        <div class="ed">{{item.company}}</div>
+                        <div class="ed">{{item.date}}</div>
+                        <div class="ed">{{item.location}}</div>
                     </div>
                 </div>
 

@@ -116,13 +116,63 @@ var app = angular.module('hub-on-hub', []);
                 "uni": "Christ Church, Oxford University",
                 "subject": "Fine Art",
                 "year": "2010-2013",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
+                "sum": "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity"
             },
             {
                 "degree": "A*  A  A ",
                 "uni": "Harrow School",
                 "subject": "Art | Economics  Ancient History",
                 "year": "2008-2010",
+                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation"
+            }
+        ]
+
+    }]);
+
+}());
+(function () {
+    app.controller('BioExCtrl', ['$scope', function ($scope) {
+
+        $scope.work =[
+            {
+                "img" : "public/img/common-pence.png",
+                "role": "founder",
+                "company": "Common Pence",
+                "date": "Jun 2014 - Present",
+                "location": "London",
+                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
+
+            },
+            {
+                "img" : "public/img/andigital.png",
+                "role": "Product Developer",
+                "company": "ANDigital",
+                "date": "Sep 2014 - Present",
+                "location": "London",
+                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
+            },
+            {
+                "img" : "public/img/jwt.png",
+                "role": "Intern",
+                "company": "JWT",
+                "date": "Jun 2013 - Aug 2013",
+                "location": "London",
+                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
+            },
+            {
+                "img" : "public/img/amv.jpeg",
+            "role": "Intern",
+            "company": "AMV BBDO",
+            "date": "Jun 2013 - Aug 2013",
+            "location": "London",
+            "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
+            },
+            {
+                "img" : "public/img/red-bull.jpeg",
+                "role": "Intern",
+                "company": "Red Bull",
+                "date": "Jun 2012 - Oct 2012",
+                "location": "London",
                 "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
             }
         ]
