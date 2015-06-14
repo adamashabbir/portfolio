@@ -1,0 +1,19 @@
+@media (max-width: 767px){
+  [data-template = "bio-skill"]{
+    .key {
+      height: 200px;
+
+      .mob-dots{
+        display: block;
+        height: 75px;
+        .dots {
+          padding: 0 10px;
+          strong{
+            padding-left: 20px;
+          }
+      }
+
+      }
+    }
+  }
+}

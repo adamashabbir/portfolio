@@ -1,5 +1,28 @@
 @media (max-width: 767px ){
   [data-template = "bio"]{
+  .bio {
+
+
+  }
+
+    .name{
+
+    }
+
+    .profile{
+      height: 175px;
+      img{
+        width: 150px;
+        margin-top: 100px;
+      }
+    }
+
+    .profile-tag{
+      height: 150px;
+      text-align: center;
+      font-size: 14px;
+      margin: 25px 30px 25px 30px;
+    }
 
   }
 }

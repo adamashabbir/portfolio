@@ -538,14 +538,15 @@ a {
     font-size: 20px; } }
 
 [data-template="bio"] .bio {
+  position: relative; }
+[data-template="bio"] .name {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 75px;
   background: lightseagreen;
-  cursor: pointer; }
-[data-template="bio"] .name {
+  cursor: pointer;
   text-align: center;
   line-height: 35px;
   font-size: 35px;
@@ -553,8 +554,31 @@ a {
   color: white; }
 [data-template="bio"] .btn {
   cursor: pointer; }
-[data-template="bio"] .pad {
-  padding: 0; }
+[data-template="bio"] .profile {
+  position: relative;
+  height: 300px; }
+  [data-template="bio"] .profile img {
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 125px; }
+[data-template="bio"] .profile-tag {
+  text-align: left;
+  font-size: 16px;
+  height: 300px;
+  margin: 125px 40px 0 0; }
+
+@media (max-width: 767px) {
+  [data-template="bio"] .profile {
+    height: 175px; }
+    [data-template="bio"] .profile img {
+      width: 150px;
+      margin-top: 100px; }
+  [data-template="bio"] .profile-tag {
+    height: 150px;
+    text-align: center;
+    font-size: 14px;
+    margin: 25px 30px 25px 30px; } }
 
 [data-template="bio-skill"] .pad {
   padding: 0; }
@@ -603,6 +627,17 @@ a {
     [data-template="bio-skill"] .skill-col .skill .circle {
       color: cadetblue; }
 
+@media (max-width: 767px) {
+  [data-template="bio-skill"] .key {
+    height: 200px; }
+    [data-template="bio-skill"] .key .mob-dots {
+      display: block;
+      height: 75px; }
+      [data-template="bio-skill"] .key .mob-dots .dots {
+        padding: 0 10px; }
+        [data-template="bio-skill"] .key .mob-dots .dots strong {
+          padding-left: 20px; } }
+
 [data-template="BioEd"] .bio-ed {
   position: relative; }
 [data-template="BioEd"] .bio-ed-title .pad {
@@ -649,6 +684,29 @@ a {
     line-height: 25px;
     margin: 60px 0;
     margin-right: 40px; }
+
+@media (max-width: 767px) {
+  [data-template="BioEd"] .bio-ed {
+    position: relative; }
+  [data-template="BioEd"] .company-logo {
+    height: 100px; }
+    [data-template="BioEd"] .company-logo .logo {
+      margin: 10px 0;
+      padding-top: 20px; }
+  [data-template="BioEd"] .ed-uni {
+    height: 150px; }
+    [data-template="BioEd"] .ed-uni .ed-info {
+      margin: 30px 0; }
+      [data-template="BioEd"] .ed-uni .ed-info .ed {
+        text-align: center;
+        font-size: 18px;
+        margin: 0 auto; }
+  [data-template="BioEd"] .uni-info {
+    display: none;
+    height: 100px; }
+    [data-template="BioEd"] .uni-info .ed-sum {
+      text-align: center;
+      font-size: 16px; } }
 
 [data-template="BioEx"] .bio-ex {
   position: relative; }
