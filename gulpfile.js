@@ -77,7 +77,8 @@ gulp.task("gen-html", function(){
         index: ['head', 'menu', 'header', 'hero', 'location', 'footer'],
         projects: ['head', 'menu', 'header', 'hero-project', 'footer'],
         collaborate: ['head', 'menu', 'header', 'collaborate', 'footer'],
-        bio: ['head', 'menu', 'header', 'bio', 'bio-ed', 'bio-ex', 'bio-skill', 'footer']
+        bio: ['head', 'menu', 'header', 'bio', 'bio-ed', 'bio-ex', 'bio-skill', 'bio-award', 'footer'],
+        web: ['head', 'menu', 'header', 'web', 'footer']
     };
 
 

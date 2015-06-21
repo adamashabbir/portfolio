@@ -1,10 +1,9 @@
 [data-template="location"] {
   .locations {
     .location {
-      height: 50vh;
+      height: 100vh;
       position: relative;
       overflow: hidden;
-      cursor: pointer;
 
       .row{
         //background: #fbbc00;
@@ -55,6 +54,7 @@
         box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.3);
         transition: all .4s ease-out;
         opacity: 0;
+        cursor: pointer;
       }
 
       &:hover {
