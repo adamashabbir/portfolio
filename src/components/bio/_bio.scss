@@ -1,47 +1,23 @@
-[data-template = "bio"]{
-
+[data-template="bio"]{
   .bio{
     position: relative;
-  }
+    height: 100vh;
+    background-image: url('/public/img/profile/profile-pic.png');
+    background-size: cover;
+    background-position: center;
 
-  .name{
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-    background:#2F98C1;
-    cursor: pointer;
-    text-align: center;
-    line-height: 35px;
-    font-size: 35px;
-    padding: 13px 0;
-    color: white;
-  }
-
-  .btn{
-    cursor: pointer;
-  }
-
-
-  .profile{
-    position: relative;
-    height: 300px;
-    img{
-      display: block;
-      margin: auto;
-      width: 250px;
-      margin-top: 125px;
+    .bio-tag-01{
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      left: 15%;
+      background: rgba(0,0,0,.5);
+      line-height: 40px;
+      font-size: 25px;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      border-radius: 5px;
     }
   }
-
-  .profile-tag{
-    text-align: left;
-    font-size: 16px;
-    height: 300px;
-    margin: 125px 40px 0 0;
-
-  }
-
-
 }

@@ -3,25 +3,24 @@
 
 
 
-    .collaborate{
+    .collaborate {
+
+      .contact {
+        height: 25vh;
+        border-right: none;
+        border-bottom: 1px solid white;
+      }
+
+      .collaborate-link {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        right: 10%;
+        font-size: 20px;
+
+      }
+
     }
-
-    .contact{
-      height: 25vh;
-      border-right: none;
-      border-bottom: 1px solid white;
-    }
-
-    .collaborate-link{
-      position: absolute;
-      top: 22%;
-      left: 10%;
-      right: 10%;
-      font-size: 20px;
-
-    }
-
-
   }
 
 }

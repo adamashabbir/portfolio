@@ -9,6 +9,8 @@
     }
 
     .slider-nav{
+      width: 20px;
+      height: 20px;
     }
 
     #slider-left{
@@ -28,8 +30,9 @@
     }
 
     .projects{
-      top: 39%;
-      font-size: 40px;
+      font-size: 30px;
+      top: 5px;
+      display: none;
     }
 
     .project-nav{
@@ -37,54 +40,71 @@
       font-size: 14px;
       margin: 0 25px;
 
+      .right-nav{
+        display: none;
+      }
+
       .left-nav{
 
       }
     }
 
     .project-overlay{
-      top: 10%;
-      right: 15%;
-      bottom: 10%;
-      left: 15%;
+      top: 100px;
+      left: 50px;
+      right: 50px;
+
       .project-title{
-        margin: 5px 10px;
-        font-size: 22px;
+        margin: 10px 2px 0 2px;
+        font-size: 20px;
+        text-align: center;
+        color: #F2C0E7;
+
       }
 
       .project-p{
         margin: 5px 10px 0 10px;
-        font-size: 20px;
+        font-size: 16px;
+        display: none;
       }
 
       .project-tech{
         margin: 10px 10px 0 10px;
-        font-size: 22px;
+        font-size: 18px;
+        text-align: center;
       }
 
       .project-stack{
         margin: 0 10px;
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
       }
 
       .project-more{
-        margin: 10px 10px 0 10px;
-        font-size: 22px;
+        margin: 30px 10px 0 10px;
+        font-size: 18px;
+        text-align: center;
       }
 
       .project-site {
         margin: 0 10px;
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
       }
 
       .project-press{
-        margin: 10px 10px 0 10px;
-        font-size: 22px;
+        margin: 20px 10px 0 10px;
+        font-size: 18px;
+        text-align: center;
       }
 
       .project-pack{
         margin: 0 10px;
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
       }
 
 

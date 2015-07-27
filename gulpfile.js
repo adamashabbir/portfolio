@@ -75,10 +75,10 @@ gulp.task("copy-public", function(){
 gulp.task("gen-html", function(){
     var pages = {
         index: ['head', 'menu', 'header', 'hero', 'location', 'footer'],
-        projects: ['head', 'menu', 'header', 'hero-project', 'footer'],
+        projects: ['head', 'menu', 'header', 'project-show', 'footer'],
         collaborate: ['head', 'menu', 'header', 'collaborate', 'footer'],
-        bio: ['head', 'menu', 'header', 'bio', 'bio-ed', 'bio-ex', 'bio-skill', 'bio-award', 'footer'],
-        web: ['head', 'menu', 'header', 'web', 'footer']
+        bio: ['head', 'menu', 'header','bio', 'bio-ed', 'bio-skill', 'bio-work', 'footer'],
+        press: ['head', 'menu', 'header', 'press', 'footer']
     };
 
 

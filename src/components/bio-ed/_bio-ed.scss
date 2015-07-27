@@ -1,85 +1,83 @@
-[data-template="BioEd"] {
-  .bio-ed {
-    position: relative;
-  }
-
-  .bio-ed-title {
+[data-template="bio-ed"]{
+  .bio-ed{
+    position:relative;
     .pad {
       padding: 0;
+      .education-back {
+        height: 180px;
+        background: #F4F4F4;
+        i{
+          position: absolute;
+          top: 40px;
+          font-size: 30px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #1DB7A8;
+        }
+
+        .education {
+          position: absolute;
+          top: 80px;
+          font-size: 30px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: grey;
+        }
+
+      }
     }
-    .ex {
-      text-align: center;
-      line-height: 40px;
-      font-size: 40px;
-      padding: 30px 0;
-      background: #2F98C1;
-      color: white;
+
+    .pad{
+      padding: 0;
+    .uni-box {
+      border: 1px dotted grey;
+      height: 200px;
       cursor: pointer;
-      margin: 0 auto;
+      &:hover{
+        .overlay-box{
+          opacity: 1;
+        }
 
-      &:hover {
-        background: rgba(32, 178, 170, 0.8);
       }
-    }
-
-  }
-
-  .company {
-    position: relative;
-    text-align: center;
-  }
-
-  .company-logo {
-    height: 250px;
-    position: relative;
-    text-align: center;
-
-    .logo{
-      margin: 60px 0;
-      color: cadetblue;
-    }
-
-  }
-
-  .ed-uni {
-    height: 250px;
-    position: relative;
-    text-align: center;
-
-    .ed-info{
-      margin: 60px 0;
-
-      .ed{
-        text-align: right;
-        margin-right: 30px;
-        font-size: 22px;
+      .icon {
+        margin: 0 auto;
+        margin-top: 90px;
+        font-size: 20px;
+        color: grey;
         line-height: 30px;
+        text-align: center;
       }
 
+      .uni-tag {
+        text-align: center;
+        margin: 0 auto;
+        color: grey;
+        line-height: 30px;
+        font-size: 30px;
+      }
+
+      .overlay-box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(30, 157, 167, .8);
+        opacity: 0;
+        .overlay-uni-tag{
+          text-align: center;
+          margin: 0 auto;
+          color: white;
+          line-height: 30px;
+          font-size: 25px;
+        }
+        .top{
+          margin-top:80px;
+        }
+      }
     }
-
-
-  }
-
-  .uni-info {
-    height: 250px;
-    position: relative;
-    text-align: center;
-
-    .ed-sum{
-      text-align: left;
-      font-size: 18px;
-      line-height: 25px;
-      margin: 60px 0;
-      margin-right: 40px;
-
     }
-
-
   }
-
-
 }
-
-
-

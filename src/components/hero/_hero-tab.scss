@@ -1,0 +1,55 @@
+@media(max-width: 991px){
+  [data-template="hero"]{
+
+    .hub-hero {
+
+      .overlay {
+
+        .hub-hero-txt {
+
+          .tag {
+            position: absolute;
+            text-align: center;
+            top: 250px;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            margin-bottom: 30px;
+            font-size: 45px;
+            line-height: 40px;
+          }
+
+          .about {
+            position: absolute;
+            text-align: center;
+            top: 315px;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            margin-bottom: 30px;
+            font-size: 32px;
+            line-height: 50px;
+
+          }
+
+          .jump {
+            position: absolute;
+            text-align: center;
+
+            top: 400px;
+            font-size: 25px;
+            line-height: 20px;
+            color: white;
+            left: 0;
+            margin: 0 auto;
+            right:0;
+            span {
+              color: #EF5B82;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

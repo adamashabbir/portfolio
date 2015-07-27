@@ -1,185 +1,34 @@
 var app = angular.module('hub-on-hub', []);
 (function () {
-    app.controller('BioCtrl', ['$scope', function ($scope) {
-
-        //var count = 0;
-        //
-        //var $nav = $('.btn');
-        //var $bioNav = $('.ed');
-        //var $bioUni = $('.each-uni');
-        //var $bioEx = $('.experience');
-        //
-        //$bioEx.click(function () {
-        //
-        //    if (++count % 2 == 0) {
-        //
-        //        $bioEx
-        //            .velocity('stop')
-        //            .velocity({top: 75}, 1000);
-        //        $bioNav
-        //            .velocity('stop')
-        //            .velocity("transition.slideUpOut", 1000);
-        //
-        //
-        //    }
-        //    return false;
-        //});
-        //
-        //
-        //$nav.click(function () {
-        //
-        //    if (++count % 2 == 1) {
-        //
-        //        $bioNav
-        //            .velocity('stop')
-        //            .velocity("transition.slideDownIn", 1000);
-        //        $bioEx
-        //            .velocity('stop')
-        //            .velocity("transition.slideDownIn", 2000);
-        //        $('.each-uni')
-        //            .velocity('stop')
-        //            .velocity("transition.slideUpOut", 500);
-        //
-        //    }
-        //    return false;
-        //});
-        //
-        //$bioNav.click(function () {
-        //
-        //    if (++count % 2 == 0) {
-        //
-        //        $bioEx
-        //            .velocity('stop')
-        //            .velocity("transition.slideUpOut", 500);
-        //        $('.each-uni')
-        //            .velocity('stop')
-        //            .velocity("transition.slideDownIn", 2000);
-        //
-        //
-        //    }
-        //    return false;
-        //});
 
 
-        //$(window).scroll(function() {
-        //    var windowWidth = $(this).width();
-        //    var windowHeight = $(this).height();
-        //    var windowScrollTop = $(this).scrollTop();
-        //
-        //
-        //    var secondAnimation = function () {
-        //        $('.skill:eq(0)').delay(1000).animate({opacity: 1}, 'slow');
-        //    };
-        //});
+    var GAEvents = [
+        ['.bio-jump', 'Bio interaction', 'Bio Hero'],
+        ['.project-jump', 'Project interaction', 'Project Hero'],
+        ['.press-jump', 'Press interaction', 'Press Hero'],
+        ['.collaborate-jump', 'Collaborate interaction', 'Collaborate Hero'],
+        ['.menu-btn', 'Menu interaction', 'Menu Btn'],
+        ['.twitter-foot', 'Twitter interaction', 'Twitter Footer'],
+        ['.linked-foot', 'Linked Interaction', 'Linked footer'],
+        ['.github-foot', 'Git Interaction', 'Git Footer'],
+        ['.email-foot', 'Email Interaction', 'Email Footer'],
+        ['.slider-nav', 'Project Nav', 'Carousel Nav'],
+        ['.project-site', 'Project View', 'Project View']
+    ];
 
-        //jQuery(function($) {
-        //    function fixDiv() {
-        //        var $cache = $('.ed');
-        //        if ($(window).scrollTop() > 75){
-        //            $cache.css(
-        //                position: 'fixed',
-        //                top: '0px',
-        //                'left': '0px',
-        //                'right': '0px',
-        //                'z-index': '98'
-        //            )
-        //            //$('.bio').css({
-        //            //    'display': 'none'
-        //            //});
-        //
-        //        else
-        //            $cache.css({
-        //                'position': 'relative',
-        //                'top': 'auto'
-        //            });
-        //    }
-        //    $(window).scroll(fixDiv);
-        //    fixDiv();
-        //});
 
-    }]);
-}());
+    for (var i in GAEvents) {
+        setGAAnalyticsEvent(GAEvents[i]);
+    }
 
-(function () {
-    app.controller('BioEdCtrl', ['$scope', function ($scope) {
+    function setGAAnalyticsEvent(array) {
+        $(document).on('click', array[0], function () {
+            console.log(array);
+            ga('send', 'event', array[1], array[2]);
+        });
+    }
 
-        $scope.education =[
-            {
-                "degree": "Masters",
-                "uni": "New York University",
-                "subject": "Interactive Technology",
-                "year": "2013-2015",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-
-            },
-            {
-                "degree": "2:1",
-                "uni": "Christ Church, Oxford University",
-                "subject": "Fine Art",
-                "year": "2010-2013",
-                "sum": "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity"
-            },
-            {
-                "degree": "A*  A  A ",
-                "uni": "Harrow School",
-                "subject": "Art | Economics  Ancient History",
-                "year": "2008-2010",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation"
-            }
-        ]
-
-    }]);
-
-}());
-(function () {
-    app.controller('BioExCtrl', ['$scope', function ($scope) {
-
-        $scope.work =[
-            {
-                "img" : "public/img/logo/common-pence.png",
-                "role": "founder",
-                "company": "Common Pence",
-                "date": "Jun 2014 - Present",
-                "location": "London",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-
-            },
-            {
-                "img" : "public/img/logo/andigital.png",
-                "role": "Product Developer",
-                "company": "ANDigital",
-                "date": "Sep 2014 - Present",
-                "location": "London",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-            },
-            {
-                "img" : "public/img/logo/jwt.png",
-                "role": "Intern",
-                "company": "JWT",
-                "date": "Jun 2013 - Aug 2013",
-                "location": "London",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-            },
-            {
-                "img" : "public/img/logo/amv.jpeg",
-            "role": "Intern",
-            "company": "AMV BBDO",
-            "date": "Jun 2013 - Aug 2013",
-            "location": "London",
-            "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-            },
-            {
-                "img" : "public/img/logo/red-bull.jpeg",
-                "role": "Intern",
-                "company": "Red Bull",
-                "date": "Jun 2012 - Oct 2012",
-                "location": "London",
-                "sum" : "Zander undertook his Masters with a Fellowship Scholarship. Combining his 3D, 2D and UX design skills with technology expanded his observation for innovation. He founded ‘Common Pence' an RFID donation panel, allowing commuters to tap spare change from their oyster card to charity. Additionally, he 3D printed a wearable solar powered headband that gathers brain waves with GPS location, allowing him to design and 3D Print an emotive map of  New York City. Zander worked on technology projects spanning Digital, Mobile, Web and ew York City. Zander worked on technology projects spanning Digital, Mobile, Web and Connected Hardware"
-            }
-        ]
-
-    }]);
-
+    console.log(GAEvents);
 }());
 (function()
 {app.controller('BioSkillCtrl', ['$scope', function($scope){
@@ -343,23 +192,6 @@ var app = angular.module('hub-on-hub', []);
             return false;
         });
 
-
-    }]);
-}());
-(function(){
-    app.controller('WebCtrl', ['$scope', function ($scope){
-
-        $('.share-btn').click(function(){
-            $('.share-overlay').velocity("stop").velocity("transition.slideUpIn", {  duration: 800 });
-            $('.share-overlay .post-this').velocity("stop").velocity("transition.slideLeftIn", {  stagger: 250 });
-            // $('.share-overlay').fadeIn(1000);
-
-            $('.cross').click(function(){
-                $('.share-overlay').velocity("stop").velocity("transition.slideDownOut", {  duration: 800 });
-
-            });
-
-        });
 
     }]);
 }());

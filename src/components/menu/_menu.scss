@@ -32,19 +32,24 @@
 
     .social{
      height: 60px;
-      border-top: 1px solid #56E2D1;
+      border-top: 1px solid #5BBDEF;
       margin: 0 0 0 25px;
+      color: #5BBDEF;
 
       li{
         padding: 15px 0;
       }
       a{
+        color: #5BBDEF;
         display:inline;
         margin: 50px 0 50px 10px;
+        &:hover{
+          color: #4B96BC;
+        }
       }
 
       .first{
-        margin-left: 0px;
+        margin-left: 0;
       }
     }
 
@@ -78,7 +83,7 @@
         &:hover {
           background: rgba(25,25,25,0.2);
           border-color: #333;
-          border-left:6px solid #56E2D1;
+          border-left:6px solid #5BBDEF;
 
           a {
             //color: #fff;

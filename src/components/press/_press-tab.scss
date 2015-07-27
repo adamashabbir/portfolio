@@ -1,0 +1,39 @@
+@media (max-width: 991px){
+  [data-template="press"]{
+
+    .press{
+      .press-box{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        right: 15%;
+        bottom: 20%;
+        background: rgba(0,0,0,.5);
+        border-radius: 10px;
+        .press-title{
+          text-align: center;
+          font-size: 20px;
+          line-height: 30px;
+          padding: 10px 0;
+          color: white;
+        }
+        .press-pack{
+          line-height: 22px;
+          font-size: 14px;
+          color: white;
+          padding: 5px 10px;
+          text-align: left;
+          a{
+            text-decoration: none;
+            color: #EF5B82;
+            cursor: pointer;
+            &:hover {
+              color: #D65476;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

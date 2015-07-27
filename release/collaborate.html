@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="/public/hub-on-hub.css"/>
     <link rel="stylesheet" href="/public/fonts/fonts.css"/>
     <link rel="stylesheet" href="/public/fontawesome/css/font-awesome.min.css"/>
+    <link rel="shortcut icon"
+          href="http://zanderwhitehurst.co/favicon.ico"
+          type="image/x-icon" />
+
 </head>
 <body data-ng-app="hub-on-hub" class="<%= content.class %>">
 
@@ -33,8 +37,10 @@
             </div>
         </div>
         <ul>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/projects.html">Projects</a></li>
             <li><a href="/bio.html">Bio</a></li>
+            <li><a href="/press.html">Press</a></li>
             <li><a href="/collaborate.html">Collaborate</a></li>
         </ul>
         <div class="social">
@@ -66,33 +72,36 @@
     <div class="collaborate">
 
         <div class="col-md-3 contact">
+            <a href="mailto:zanderwhitehurst@gmail.com?Subject=Howdy">
             <div class="collaborate-link">
-                    <i class="fa fa-slack fa-3x"></i>
-                Join my slack channel
+                    <i class="fa fa-envelope fa-3x"></i>
+                Ping me a note
             </div>
-
-
+            </a>
         </div>
         <div class="col-md-3 contact">
+          <a href="https://twitter.com/zwhitehurst" target="_blank">
             <div class="collaborate-link">
                 <i class="fa fa-twitter fa-3x"></i>
                 Send me a tweet
             </div>
-
+          </a>
         </div>
         <div class="col-md-3 contact">
+            <a href="https://github.com/ZanderWhitehurst" target="_blank">
             <div class="collaborate-link">
                 <i class="fa fa-github fa-3x"></i>
                 Fork me on Git hub
             </div>
-
+            </a>
         </div>
         <div class="col-md-3 contact">
+            <a href="https://uk.linkedin.com/in/zanderwhitehurst" target="_blank">
             <div class="collaborate-link">
-                <i class="fa fa-mobile fa-3x"></i>
-                Give me a dingle
+                <i class="fa fa-linkedin fa-3x"></i>
+                Add me
             </div>
-
+            </a>
         </div>
         </div>
 
@@ -101,17 +110,17 @@
 <div data-template="footer">
     <footer id="footer">
         <div class="col-md-12 footer-tag">
-            <a href="http://twitter.com">
-                <i class="fa fa-twitter social"></i>
+            <a class="twitter-foot" href="http://twitter.com/zwhitehurst" target="_blank">
+                <i class="fa fa-twitter"></i>
             </a>
-            <a href="http://twitter.com">
-                <i class="fa fa-linkedin social"></i>
+            <a class="linked-foot" href="http://linkedin.com/zanderwhitehurst" target="_blank">
+                <i class="fa fa-linkedin"></i>
             </a>
-            <a href="http://twitter.com">
-                <i class="fa fa-github social"></i>
+            <a class="github-foot" href="https://github.com/ZanderWhitehurst" target="_blank">
+                <i class="fa fa-github"></i>
             </a>
-            <a href="http://twitter.com">
-                <i class="fa fa-pencil social"></i>
+            <a class="email-foot" href="mailto:zanderwhitehurst@gmail.com?Subject=Howdy">
+                <i class="fa fa-envelope"></i>
             </a>
         </div>
     </footer>
@@ -128,7 +137,6 @@
 </script>
 
 <script>  Reveal.initialize(); </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.js"></script>
 <script src="/public/lib.js"></script>
 <script src="/public/hub-on-hub.js"></script>
 

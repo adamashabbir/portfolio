@@ -1,48 +1,70 @@
-<div data-template="BioEd" ng-controller="BioEdCtrl">
-
+<div data-template="bio-ed">
     <div class="bio-ed">
-        <div class="bio-ed-title">
-            <div class="col-md-12 pad">
-                <div class="ex">
-                    Education
+        <div class="col-md-12 pad">
+            <div class="education-back">
+                <i class="fa fa-graduation-cap"></i>
+                <div class="education">Education
                 </div>
             </div>
         </div>
+            <div class="col-md-4 pad">
+                <div class="uni-box">
+                    <div class="icon">
 
-        <div class="company" ng-repeat="item in education">
-            <div class="col-md-2">
-                <div class="company-logo">
-                    <div class="logo">
-                        <i class="fa fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <div class="uni-tag">
+                        New York University
+                    </div>
+                    <div class="overlay-box">
+
+                        <div class="overlay-uni-tag top">
+                            Interactive Technology
+                        </div>
+                        <div class="overlay-uni-tag">
+                            Masters
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 pad">
+                <div class="uni-box">
+                    <div class="icon">
 
-            <div class="col-md-3">
-                <div class="ed-uni">
-                    <div class="ed-info">
-                    <div class="ed">{{item.degree}}</div>
-                    <div class="ed">{{item.uni}}</div>
-                    <div class="ed">{{item.subject}}</div>
-                    <div class="ed">{{item.year}}</div>
+                    </div>
+                    <div class="uni-tag">
+                        Oxford University
+                    </div>
+                    <div class="overlay-box">
+
+                        <div class="overlay-uni-tag top">
+                            Fine Art
+                        </div>
+                        <div class="overlay-uni-tag">
+                            2:1
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <div class="col-md-4 pad">
+                <div class="uni-box">
+                    <div class="icon">
 
-            <div class="col-md-7">
-                <div class="uni-info">
-                    <div class="ed-sum">{{item.sum}}</div>
+                    </div>
+                    <div class="uni-tag">
+                        Harrow School
+                    </div>
+                    <div class="overlay-box">
 
+                    <div class="overlay-uni-tag top">
+                        Art | History | Economics
+                    </div>
+                    <div class="overlay-uni-tag">
+                        A* | A | A
+                    </div>
+                    </div>
                 </div>
 
             </div>
-
-
-        </div>
-
-
     </div>
-
-
 </div>

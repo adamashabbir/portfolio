@@ -1,7 +1,7 @@
 [data-template ="collaborate"] {
   .collaborate {
     height: 100vh;
-    background: deepskyblue;
+    background: #87C9C3;
 
   }
 
@@ -13,23 +13,30 @@
 
     &:hover {
       background: rgba(100, 100, 100, 0.5);
+      .contact{
+        opacity: 1;
+      }
     }
   }
 
+a {
 
+  .collaborate-link {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
 
-    .collaborate-link {
-      position: absolute;
-      text-align: center;
-      top: 40%;
-      left: 10%;
-      right: 10%;
-      font-size: 25px;
-      color: white;
-      cursor: pointer;
-
-      i{
-        display: block;
-      }
+    i {
+      display: block;
     }
+    .contact {
+      display: block;
+    }
+  }
+}
 }

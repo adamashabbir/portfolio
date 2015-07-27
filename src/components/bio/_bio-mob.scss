@@ -1,27 +1,20 @@
-@media (max-width: 767px ){
-  [data-template = "bio"]{
-  .bio {
+@media(max-width: 767px){
+  [data-template="bio"]{
+    .bio{
 
-
-  }
-
-    .name{
-
-    }
-
-    .profile{
-      height: 175px;
-      img{
-        width: 150px;
-        margin-top: 100px;
+      .bio-tag-01{
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        left: 5%;
+        background: rgba(0,0,0,.5);
+        line-height: 25px;
+        font-size: 16px;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        border-radius: 5px;
       }
-    }
-
-    .profile-tag{
-      height: 150px;
-      text-align: center;
-      font-size: 14px;
-      margin: 25px 30px 25px 30px;
     }
 
   }

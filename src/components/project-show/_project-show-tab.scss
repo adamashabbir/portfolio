@@ -1,0 +1,141 @@
+@media( max-width: 991px){
+  [data-template="project-show"]{
+
+  #myCarousel, .carousel, .slide {
+    height: 100vh;
+    background: #282828;
+
+    .project{
+      position: absolute;
+      font-sizE: 15px;
+      color: #DEDEE0;
+      left: 0;
+      top: 25px;
+      right: 0;
+      text-align: center;
+      display: none;
+    }
+
+
+    .carousel-indicators {
+      bottom: 10px;
+      .active {
+        background: lightseagreen;
+
+      }
+    }
+
+    .active {
+
+    }
+
+    .pad {
+      padding: 0;
+
+      .border {
+
+        .image {
+          position: absolute;
+          top: 100px;
+          left: 50%;
+          width: 550px;
+          height: 300px;
+          margin-left: -270px;
+          background-size: cover;
+          background-position: center;
+          cursor: pointer;
+          opacity: 1;
+          transition: opacity .25s ease-in-out;
+          -moz-transition: opacity .25s ease-in-out;
+          -webkit-transition: opacity .25s ease-in-out;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+      }
+
+      .fund-text {
+        background: white;
+        .text-box {
+          position: absolute;
+          top: 400px;
+          left: 50%;
+          width: 550px;
+          margin-left: -270px;
+          border-right: 2px dotted #3F3F3F;
+          border-top: 2px dotted #3F3F3F;
+          border-bottom: 2px dotted #3F3F3F;
+          height: 200px;
+          background: #3F3F3F;
+
+          .title {
+            font-size: 20px;
+            line-height: 25px;
+            color: #DEDEE0;
+            padding: 10px 25px 5px 25px;
+          }
+
+          .what {
+            padding: 5px 25px 10px 25px;
+            font-size: 18px;
+            color: #DEDEE0;
+            display: none;
+          }
+
+          .tech-stack-title{
+            padding: 5px 25px 0 25px;
+            font-size: 16px;
+            color: #F2C0E7;
+          }
+
+          .tech-stack-p{
+            padding: 0 25px 10px 25px;
+            font-size: 13px;
+            color: #3FACEF;
+          }
+
+          .press-title{
+            padding:5px 25px 0 25px;
+            font-size: 16px;
+            color: #F2C0E7;
+            display: none;
+          }
+
+          .press-p{
+            padding: 0 25px 10px 25px;
+            font-size: 13px;
+            color: #3FACEF;
+            display: none;
+          }
+
+          .explore-title{
+            padding: 5px 25px 0 25px;
+            font-size: 16px;
+            color: #F2C0E7;
+          }
+
+          .project-site{
+            padding: 0 25px 10px 25px;
+            font-size: 13px;
+            color: #3FACEF;
+            a{
+              color: #6FC6AB;
+              text-decoration: none;
+              &:hover{
+                color: #599E88;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+}
+
+
+}
