@@ -38,9 +38,9 @@
             position: absolute;
             top: 50px;
             left: 50%;
-            width: 300px;
-            height: 300px;
-            margin-left: -150px;
+            width: 250px;
+            height: 250px;
+            margin-left: -125px;
             background-size: cover;
             background-position: center;
             cursor: pointer;
@@ -60,22 +60,22 @@
           background: white;
           .text-box {
             position: absolute;
-            top: 350px;
+            top: 300px;
             left: 50%;
-            width: 300px;
-            margin-left: -150px;
+            width: 250px;
+            margin-left: -125px;
             border-right: 2px dotted #3F3F3F;
             border-top: 2px dotted #3F3F3F;
             border-bottom: 2px dotted #3F3F3F;
-            height: 200px;
+            height: 160px;
             background: #3F3F3F;
 
             .title {
-              font-size: 20px;
-              line-height: 25px;
+              font-size: 18px;
+              line-height: 20px;
               color: #DEDEE0;
               text-align: center;
-              padding: 10px 25px 5px 25px;
+              padding: 10px 10px 5px 10px;
             }
 
             .what {
@@ -86,15 +86,15 @@
             }
 
             .tech-stack-title{
-              padding: 5px 25px 0 25px;
-              font-size: 14px;
+              padding: 5px 10px 0 10px;
+              font-size: 12px;
               text-align: center;
               color: #F2C0E7;
             }
 
             .tech-stack-p{
-              padding: 0 25px 10px 25px;
-              font-size: 11px;
+              padding: 0 10px 10px 10px;
+              font-size: 10px;
               text-align: center;
               color: #3FACEF;
             }
@@ -114,15 +114,15 @@
             }
 
             .explore-title{
-              padding: 5px 25px 0 25px;
-              font-size: 14px;
+              padding: 5px 10px 0 10px;
+              font-size: 12px;
               color: #F2C0E7;
               text-align: center;
             }
 
             .project-site{
-              padding: 0 25px 10px 25px;
-              font-size: 11px;
+              padding: 0 10px 10px 10px;
+              font-size: 10px;
               color: #3FACEF;
               text-align: center;
               a{

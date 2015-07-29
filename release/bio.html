@@ -37,18 +37,18 @@
             </div>
         </div>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/bio.html">Bio</a></li>
-            <li><a href="/press.html">Press</a></li>
-            <li><a href="/collaborate.html">Collaborate</a></li>
+            <li><a href="/index.html" class="tabs">Home</a></li>
+            <li><a href="/projects.html" class="tabs">Projects</a></li>
+            <li><a href="/bio.html" class="tabs">Bio</a></li>
+            <li><a href="/press.html" class="tabs">Press</a></li>
+            <li><a href="/collaborate.html" class="tabs">Collaborate</a></li>
         </ul>
         <div class="social">
             <li>
-                <a class="first" href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
-                <a href=""><i class="fa fa-pencil"></i></a>
+                <a class="first" href=""><i class="fa fa-twitter social-icons"></i></a>
+                <a href=""><i class="fa fa-linkedin social-icons"></i></a>
+                <a href=""><i class="fa fa-github social-icons"></i></a>
+                <a href=""><i class="fa fa-pencil social-icons"></i></a>
             </li>
         </div>
     </div>
@@ -68,7 +68,7 @@
     </div>
 </div>
 
-<div data-template ="bio">
+<div data-template ="bio" data-ng-controller="BioCtrl">
     <div class="bio">
         <div class="bio-tag-01">
             Zander was named one of the top 10 young British entrepreneurs by Founders Forum in 2015.
@@ -77,7 +77,7 @@
 
     </div>
 </div>
-<div data-template="bio-ed">
+<div data-template="bio-ed" data-ng-controller="BioEdCtrl">
     <div class="bio-ed">
         <div class="col-md-12 pad">
             <div class="education-back">
@@ -147,7 +147,7 @@
             </div>
     </div>
 </div>
-<div data-template="bio-skill">
+<div data-template="bio-skill" data-ng-controller="BioSkillCtrl">
     <div class="skill-color">
 
     <div class="col-md-12 pad">

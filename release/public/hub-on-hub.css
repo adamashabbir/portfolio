@@ -859,7 +859,7 @@ a {
       [data-template="bio-skill"] .key .mob-dots .dots {
         padding: 0 10px; }
         [data-template="bio-skill"] .key .mob-dots .dots strong {
-          padding-left: 20px; }
+          padding-left: 5px; }
   [data-template="bio-skill"] .skill-col .skill {
     font-size: 16px;
     margin: 0 25px; } }
@@ -1146,9 +1146,9 @@ a {
         position: absolute;
         top: 50px;
         left: 50%;
-        width: 300px;
-        height: 300px;
-        margin-left: -150px;
+        width: 250px;
+        height: 250px;
+        margin-left: -125px;
         background-size: cover;
         background-position: center;
         cursor: pointer;
@@ -1162,34 +1162,34 @@ a {
         background: white; }
         [data-template="project-show"] #myCarousel .pad .fund-text .text-box, [data-template="project-show"] .carousel .pad .fund-text .text-box, [data-template="project-show"] .slide .pad .fund-text .text-box {
           position: absolute;
-          top: 350px;
+          top: 300px;
           left: 50%;
-          width: 300px;
-          margin-left: -150px;
+          width: 250px;
+          margin-left: -125px;
           border-right: 2px dotted #3F3F3F;
           border-top: 2px dotted #3F3F3F;
           border-bottom: 2px dotted #3F3F3F;
-          height: 200px;
+          height: 160px;
           background: #3F3F3F; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .title, [data-template="project-show"] .carousel .pad .fund-text .text-box .title, [data-template="project-show"] .slide .pad .fund-text .text-box .title {
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 20px;
             color: #DEDEE0;
             text-align: center;
-            padding: 10px 25px 5px 25px; }
+            padding: 10px 10px 5px 10px; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .what, [data-template="project-show"] .carousel .pad .fund-text .text-box .what, [data-template="project-show"] .slide .pad .fund-text .text-box .what {
             padding: 5px 25px 10px 25px;
             font-size: 18px;
             color: #DEDEE0;
             display: none; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .tech-stack-title, [data-template="project-show"] .carousel .pad .fund-text .text-box .tech-stack-title, [data-template="project-show"] .slide .pad .fund-text .text-box .tech-stack-title {
-            padding: 5px 25px 0 25px;
-            font-size: 14px;
+            padding: 5px 10px 0 10px;
+            font-size: 12px;
             text-align: center;
             color: #F2C0E7; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .tech-stack-p, [data-template="project-show"] .carousel .pad .fund-text .text-box .tech-stack-p, [data-template="project-show"] .slide .pad .fund-text .text-box .tech-stack-p {
-            padding: 0 25px 10px 25px;
-            font-size: 11px;
+            padding: 0 10px 10px 10px;
+            font-size: 10px;
             text-align: center;
             color: #3FACEF; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .press-title, [data-template="project-show"] .carousel .pad .fund-text .text-box .press-title, [data-template="project-show"] .slide .pad .fund-text .text-box .press-title {
@@ -1203,13 +1203,13 @@ a {
             color: #3FACEF;
             display: none; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .explore-title, [data-template="project-show"] .carousel .pad .fund-text .text-box .explore-title, [data-template="project-show"] .slide .pad .fund-text .text-box .explore-title {
-            padding: 5px 25px 0 25px;
-            font-size: 14px;
+            padding: 5px 10px 0 10px;
+            font-size: 12px;
             color: #F2C0E7;
             text-align: center; }
           [data-template="project-show"] #myCarousel .pad .fund-text .text-box .project-site, [data-template="project-show"] .carousel .pad .fund-text .text-box .project-site, [data-template="project-show"] .slide .pad .fund-text .text-box .project-site {
-            padding: 0 25px 10px 25px;
-            font-size: 11px;
+            padding: 0 10px 10px 10px;
+            font-size: 10px;
             color: #3FACEF;
             text-align: center; }
             [data-template="project-show"] #myCarousel .pad .fund-text .text-box .project-site a, [data-template="project-show"] .carousel .pad .fund-text .text-box .project-site a, [data-template="project-show"] .slide .pad .fund-text .text-box .project-site a {

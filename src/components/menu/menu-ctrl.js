@@ -19,6 +19,8 @@
                 $menuNav
                     .velocity('stop')
                     .velocity("transition.slideLeftIn", 500);
+                $('.menu-nav .tabs').velocity("stop").velocity("transition.slideLeftIn",{stagger: 100});
+                $('.menu-nav .social').velocity("stop").velocity("transition.bounceUpIn",{stagger: 600});
             }
 
             return false;
