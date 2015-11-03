@@ -1,0 +1,126 @@
+[data-template="header"] {
+
+  .header {
+    height: 100px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    transition: 0.4s;
+
+    .logo{
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      .name{
+        font-size: 20px;
+        color: white;
+        a{
+          text-decoration: none;
+          color: white;
+          &:hover{
+            color: #ffc200;
+            span{
+              color: white;
+            }
+          }
+        }
+        span{
+          color: #ffc200;
+        }
+      }
+    }
+
+
+    .header-tabs {
+      i{
+        padding-right: 5px;
+      }
+      float: right;
+      font-size: 16px;
+      margin-right: 40px;
+      margin-left: 30px;
+      padding-top: 30px;
+      color: white;
+
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: white;
+          border-bottom: 3px solid white;
+        }
+      }
+    }
+
+
+
+    .menu-btn {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      height: 35px;
+      z-index: 101;
+      visibility: hidden;
+
+      .fa-bars {
+        line-height: 35px !important;
+        font-size: 35px;
+        width: 30px;
+        text-align: center;
+        display: inline-block;
+        color: #e88d0a;
+        cursor: pointer;
+        //background: $hub-grey;
+        border-radius: 4px;
+        &:hover{
+          color: white;
+        }
+      }
+
+      .menu-txt {
+        line-height: 35px;
+        //font-size: 15px;
+        float: right;
+        padding: 0 10px;
+        display: none;
+        color: white;
+      }
+
+    }
+
+    .mobile-nav{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 75px;
+      background: rgba(0,0,0,.5);
+      visibility:hidden;
+      .mini-tabs{
+        display: inline-block;
+        margin: 0 30px;
+        font-size: 8px;
+        color: white;
+        a{
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          i{
+            padding-top: 15px;
+            display: block;
+            font-size: 25px;
+          }
+          &:hover{
+            color: #00d4b4;
+          }
+        }
+      }
+
+    }
+
+  }
+}

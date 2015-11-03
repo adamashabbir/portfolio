@@ -1,0 +1,115 @@
+@media(max-width: 767px) {
+  [data-template = "blog-post-002"] {
+    .blog-post-hero {
+      position: relative;
+      height: 650px;
+
+      background: url('/public/img/profile/crowdfund.jpg');
+      background-size: cover;
+      background-position: center;
+      .blog-post-hero-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .7);
+        .read-time {
+          font-size: 15px;
+          line-height: 25px;
+          color: white;
+          padding: 25px 0 25px 0;
+          text-align: center;
+        }
+        .blog-post-title {
+          font-size: 30px;
+          line-height: 40px;
+          color: white;
+          text-align: center;
+          padding-top: 200px;
+          padding-bottom: 20px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+
+        .share {
+          position: relative;
+          font-size: 16px;
+          line-height: 40px;
+          color: white;
+          text-align: center;
+          border-bottom: 1px solid white;
+          width: 150px;
+          margin: 0 auto;
+        }
+
+        .blog-post-social {
+          position: relative;
+          text-align: center;
+          margin: 0 auto;
+          padding-top: 20px;
+
+          a {
+            margin: 0 10px;
+            padding: 10px 3px;
+            text-decoration: none;
+            background: #486dab;
+
+            &:hover {
+              border-bottom: 5px solid rgba(0,0,0,.5);
+            }
+
+            i {
+              display: inline-block;
+              font-size: 15px;
+              margin: 0 15px;
+              color: white;
+              margin-top: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
+
+    .blog-post-content {
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+      .blog-post-subtitle {
+        font-size: 25px;
+        line-height: 35px;
+        color: dimgrey;
+        text-align: left;
+        padding: 50px 0 50px 0;
+      }
+
+      .blog-post-content {
+        font-size: 16px;
+        line-height: 26px;
+        color: grey;
+        text-align: left;
+        padding-bottom: 50px;
+        span {
+          font-size: 10px;
+          padding-top: 10px;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .title {
+          font-size: 22px;
+          line-height: 32px;
+          color: dimgrey;
+          text-align: left;
+        }
+        img {
+          width: 100%;
+          height: auto;
+
+        }
+      }
+    }
+
+  }
+}

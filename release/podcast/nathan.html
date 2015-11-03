@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="//assets.adobedtm.com/9b346bffe2591722c64f88bf101c0664c8936e16/satelliteLib-93e274c58a6ad1ed12b80e4d8c0a01144cd6e324.js"></script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Zander Whitehurst</title>
+
+    <link rel="stylesheet" href="/public/lib.css"/>
+    <link rel="stylesheet" href="/public/z-w.css"/>
+    <link rel="stylesheet" href="/public/fonts/fonts.css"/>
+    <link rel="stylesheet" href="/public/fontawesome/css/font-awesome.min.css"/>
+    <link rel="shortcut icon"
+          href="http://zanderwhitehurst.co/favicon-z.ico"
+          type="image/x-icon" />
+
+    <meta property="og:title"
+          content="Zander Whitehurst | Nathan Nelson " />
+
+
+    <meta property="og:url"
+          content="http://www.zanderwhitehurst.co/podcast/nathan.html" />
+
+    <meta property="og:description" content="Each week Zander delves into everything in and around startups and start lines. Collaborating with some of the brightest and most forward thinking minds in health, fitness, nutrition, tech, entertainment & entrepreneurship. Intimate, deep and often intense, these are not interviews. They are collaborative conversations that aim to inspire, provoke and challenge you to become obsessed with a startups and startlines." />
+
+
+    <meta property="og:image"
+          content="http://zanderwhitehurst.co/public/img/profile/nathan-n.jpg" />
+
+
+
+</head>
+<body data-ng-app="z-w" class="<%= content.class %>">
+<div data-template="menu" data-ng-controller="MenuCtrl">
+    <div class="menu-nav">
+        <div class="nav-header">
+            <div class="nav-close">
+                <div class="fa fa-times"></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="tabs"> <i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="http://codelounge.xyz" target="_blank" class="tabs">  <i class="fa fa-code"></i> LEARN</a></li>
+            <li><a href="/lifestyle.html" class="tabs"> <i class="fa fa-camera"></i> BLOG</a></li>
+            <li><a href="/podcast.html" class="tabs"> <i class="fa fa-headphones"></i> PODCAST</a></li>
+            <li><a href="/bio.html" class="tabs">  <i class="fa fa-heart"></i> LIFE</a></li>
+            <li><a href="/press.html" class="tabs">  <i class="fa fa-newspaper-o"></i> APPS</a></li>
+        </ul>
+        <div class="social">
+            <li>
+                <a class="first" href="http://twitter.com/zwhitehurst" target="_blank"><i class="fa fa-twitter social-icons"></i></a>
+                <a href="http://linkedin.com/zanderwhitehurst" target="_blank"><i class="fa fa-linkedin social-icons"></i></a>
+                <a href="http://github.com/zanderwhitehurst" target="_blank"><i class="fa fa-github social-icons"></i></a>
+                <a href="http://instagram.com/zanderwhitehurst" target="_blank"><i class="fa fa-instagram social-icons"></i></a>
+            </li>
+        </div>
+    </div>
+</div>
+<div data-template="header" data-ng-controller="HeaderCtrl">
+    <div class="header">
+        <div class="logo">
+            <div class="name">
+                <a href="/index.html">
+                ZANDER<span>WHITEHURST</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/advertise.html">
+                <i class="fa fa-star-o"></i>
+                AD
+            </a>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/bio.html">
+                <i class="fa fa-play"></i>
+                STORY
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/lifestyle.html">
+                <i class="fa fa-heart"></i>
+                LIFE
+            </a>
+        </div>
+        <div class="header-tabs">
+            <a href="/podcast.html">
+                <i class="fa fa-headphones"></i>
+                LISTEN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/blog.html">
+                <i class="fa fa-code"></i>
+                LEARN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/products.html">
+                <i class="fa fa-lightbulb-o"></i>
+                LAUNCH
+            </a>
+        </div>
+
+       <!-- <div class="menu-btn">
+            <div class="fa fa-bars"></div>
+            &lt;!&ndash;<div class="menu-txt">Menu</div>&ndash;&gt;
+        </div>-->
+
+        <div class="mobile-nav">
+            <div class="mini-tabs">
+                <a href="/index.html">
+                    <i class="fa fa-home"></i>
+                    HOME
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/bio.html">
+                    <i class="fa fa-play"></i>
+                    STORY
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/lifestyle.html">
+                    <i class="fa fa-heart"></i>
+                    LIFE
+                </a>
+            </div>
+            <div class="mini-tabs">
+                <a href="/podcast.html">
+                    <i class="fa fa-headphones"></i>
+                    LISTEN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/blog.html">
+                    <i class="fa fa-code"></i>
+                    LEARN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/products.html">
+                    <i class="fa fa-lightbulb-o"></i>
+                    LAUNCH
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-template = "podcast-page-nathan">
+    <div class="podcast-page-nathan">
+
+        <div class="podcast-page-backdrop">
+            <div class="podcast-page-overlay">
+                <div class="podcast-page-person">
+                    ZWP - NATHAN NELSON
+                </div>
+            </div>
+        </div>
+
+            <div class="podcast-title">
+                Nathan Nelson on Clean Coding and Clean Living
+            </div>
+
+        <div class="podcast-player-date">
+            14/10/15
+        </div>
+        <div class="podcast-player">
+        <div class="podcast-main-image">
+        </div>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228216029&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=falsee&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false&amp;sharing=false&amp;download=false&amp;cookie_policy=false"></iframe>
+
+        <div class="podcast-main-p">
+            Nathan Nelson is a hugely talented full stack developer and designer. He shares his journey from photoshopping newspapers at school to leading the end-to-end software development for million dollar products.
+            <br><br>
+            Nathan has a passion for clean code and clean living. Over the years he has learnt the importance of building and openly sharing projects. He believes full immersion is the best way to learn anything. Leading a healthy lifestyle, Nathan has adopted intermittent fasting and kindly shares his knowledge of a variety of successful diets.
+            <br><br>
+            An innovator, inspiration and absolute legend.
+            <br> <br>
+            <a href="http://instagram.com/nazzanuk" target="_blank">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://uk.linkedin.com/in/nathannelsonweb" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="http://www.jamahiel.com/" target="_blank">
+                <i class="fa fa-lightbulb-o"></i>
+            </a>
+        </div>
+        </div>
+
+    </div>
+</div>
+ <div data-template = "hero-recent" >
+ <div class="hero-recent">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-podcast">
+             RECENT PODCASTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    AMELIA WINGER BEARSKIN
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop" style=" background-image: url('/public/img/profile/z-podcast.jpg');">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    STARTUPS & STARTLINES
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-post" >
+ <div class="hero-recent-post">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-post">
+             RECENT POSTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-05 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="1730398705"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop" style=" background-image: url('/public/img/profile/surf-post.jpg');">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                        RIDE THE WAVE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                    SINUS BLASTER
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+         <div class="col-md-3 hidden-xs hidden-sm">
+             <div class="ad-block" style="text-align: center">
+
+                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                 <!-- rect-04 -->
+                 <ins class="adsbygoogle"
+                      style="display:inline-block;width:300px;height:250px"
+                      data-ad-client="ca-pub-9230205567828830"
+                      data-ad-slot="9253665507"></ins>
+                 <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                 </script>
+             </div>
+         </div>
+ </div>
+
+
+ </div>
+<div data-template ="email-podcast">
+    <div class="col-md-12">
+    <div class="email-podcast">
+        <div class="stay"> SPEAK UP & HOP ON MY PODCAST </div>
+            <!--<form action="#">
+                <div class="input">
+                    <input type="text" class="button" id="email" name="email" placeholder="Add email">
+                    <input type="submit" class="button" id="submit" value="SIGN UP">
+                </div>
+            </form>-->
+
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+                <form action="//xyz.us11.list-manage.com/subscribe/post?u=0f08ae7e014c18f2429bd8d1f&amp;id=24cb829a9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="text" value="" name="FNAME"  id="mce-FNAME" placeholder="FIRST NAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS">
+                        </div>
+                        <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-btn-podcast"></div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_0f08ae7e014c18f2429bd8d1f_24cb829a9c" tabindex="-1" value=""></div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+
+    </div>
+</div>
+<div data-template = "code-banner">
+    <div class="col-md-12 pad">
+    <div class="code-banner">
+        <div class="code-banner-text">
+           LEARN THE FUNDAMENTALS OF STARTUPS AND HOW TO CODE, IN COMFORT!
+        </div>
+        <a href="http://codelounge.xyz">
+        <div class="code-banner-join">
+                JOIN CODE LOUNGE <i class="fa fa-chevron-right"></i>
+        </div>
+        </a>
+    </div>
+    </div>
+</div>
+<!--footer.ejs-->
+<div data-template="footer">
+    <footer id="footer">
+        <div class="col-md-12 footer-tag">
+            <a class="social-foot" href="http://twitter.com/zwhitehurst" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="social-foot" href="http://instagram.com/zanderwhitehurst" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="social-foot" href="https://uk.linkedin.com/in/zanderwhitehurst" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="social-foot" href="https://soundcloud.com/ZanderWhitehurst">
+                <i class="fa fa-soundcloud"></i>
+            </a>
+            <a class="social-foot" href="https://github.com/ZanderWhitehurst">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68575506-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    var vglnk = { key: '8147e8f277a3562bb6c8fa772ec96218' };
+
+    (function(d, t) {
+        var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>
+<script src="/public/lib.js"></script>
+<script src="/public/z-w.js"></script>
+
+
+<!--<script type="text/javascript">_satellite.pageBottom();</script>-->
+</body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="//assets.adobedtm.com/9b346bffe2591722c64f88bf101c0664c8936e16/satelliteLib-93e274c58a6ad1ed12b80e4d8c0a01144cd6e324.js"></script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Zander Whitehurst</title>
+
+    <link rel="stylesheet" href="/public/lib.css"/>
+    <link rel="stylesheet" href="/public/z-w.css"/>
+    <link rel="stylesheet" href="/public/fonts/fonts.css"/>
+    <link rel="stylesheet" href="/public/fontawesome/css/font-awesome.min.css"/>
+    <link rel="shortcut icon"
+          href="http://zanderwhitehurst.co/favicon-z.ico"
+          type="image/x-icon" />
+
+    <meta property="og:title"
+          content="Zander Whitehurst | How to hit 200% of your crowdfunding goal" />
+
+
+    <meta property="og:url"
+          content="http://www.zanderwhitehurst.co/blog/hit-crowdfunding-goal.html" />
+
+    <meta property="og:description" content="
+            Crowdfunding is phenomenal. It has revolutionized fundraising. For those aware and unaware of what on earth
+            it is, read on. I have built a number of crowdfunding campaigns and many friends have successfully
+            crowdfunded film, app and wearable projects. However my tips apply to every category." />
+
+
+    <meta property="og:image"
+          content="http://zanderwhitehurst.co/public/img/profile/crowdfund.jpg" />
+
+
+</head>
+<body data-ng-app="z-w" class="<%= content.class %>">
+
+<div data-template="menu" data-ng-controller="MenuCtrl">
+    <div class="menu-nav">
+        <div class="nav-header">
+            <div class="nav-close">
+                <div class="fa fa-times"></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="tabs"> <i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="http://codelounge.xyz" target="_blank" class="tabs">  <i class="fa fa-code"></i> LEARN</a></li>
+            <li><a href="/lifestyle.html" class="tabs"> <i class="fa fa-camera"></i> BLOG</a></li>
+            <li><a href="/podcast.html" class="tabs"> <i class="fa fa-headphones"></i> PODCAST</a></li>
+            <li><a href="/bio.html" class="tabs">  <i class="fa fa-heart"></i> LIFE</a></li>
+            <li><a href="/press.html" class="tabs">  <i class="fa fa-newspaper-o"></i> APPS</a></li>
+        </ul>
+        <div class="social">
+            <li>
+                <a class="first" href="http://twitter.com/zwhitehurst" target="_blank"><i class="fa fa-twitter social-icons"></i></a>
+                <a href="http://linkedin.com/zanderwhitehurst" target="_blank"><i class="fa fa-linkedin social-icons"></i></a>
+                <a href="http://github.com/zanderwhitehurst" target="_blank"><i class="fa fa-github social-icons"></i></a>
+                <a href="http://instagram.com/zanderwhitehurst" target="_blank"><i class="fa fa-instagram social-icons"></i></a>
+            </li>
+        </div>
+    </div>
+</div>
+<div data-template="header" data-ng-controller="HeaderCtrl">
+    <div class="header">
+        <div class="logo">
+            <div class="name">
+                <a href="/index.html">
+                ZANDER<span>WHITEHURST</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/advertise.html">
+                <i class="fa fa-star-o"></i>
+                AD
+            </a>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/bio.html">
+                <i class="fa fa-play"></i>
+                STORY
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/lifestyle.html">
+                <i class="fa fa-heart"></i>
+                LIFE
+            </a>
+        </div>
+        <div class="header-tabs">
+            <a href="/podcast.html">
+                <i class="fa fa-headphones"></i>
+                LISTEN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/blog.html">
+                <i class="fa fa-code"></i>
+                LEARN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/products.html">
+                <i class="fa fa-lightbulb-o"></i>
+                LAUNCH
+            </a>
+        </div>
+
+       <!-- <div class="menu-btn">
+            <div class="fa fa-bars"></div>
+            &lt;!&ndash;<div class="menu-txt">Menu</div>&ndash;&gt;
+        </div>-->
+
+        <div class="mobile-nav">
+            <div class="mini-tabs">
+                <a href="/index.html">
+                    <i class="fa fa-home"></i>
+                    HOME
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/bio.html">
+                    <i class="fa fa-play"></i>
+                    STORY
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/lifestyle.html">
+                    <i class="fa fa-heart"></i>
+                    LIFE
+                </a>
+            </div>
+            <div class="mini-tabs">
+                <a href="/podcast.html">
+                    <i class="fa fa-headphones"></i>
+                    LISTEN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/blog.html">
+                    <i class="fa fa-code"></i>
+                    LEARN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/products.html">
+                    <i class="fa fa-lightbulb-o"></i>
+                    LAUNCH
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-template="blog-post-002" data-ng-controller="BlogPost002Ctrl">
+    <div class="blog-post-hero">
+        <div class="blog-post-hero-overlay">
+            <div class="blog-post-title">
+                HOW TO HIT 200% OF YOUR CROWDFUNDING GOAL
+            </div>
+            <div class="read-time">
+                12 minute read
+            </div>
+
+            <div class="share">
+                TAKE CARE & SHARE
+            </div>
+            <div class="blog-post-social">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.zanderwhitehurst.co/blog/hit-crowdfunding-goal.html" target="_blank"><i class="fa fa-facebook social-icon"></i>
+                </a>
+                <a href="https://twitter.com/home?status=How%20to%20hit%20200%25%20of%20your%20crowdfunding%20goal%20http%3A//www.zanderwhitehurst.co/blog/hit-crowdfunding-goal.html%20%40zwhitehurst" target="_blank" style=" background: #1aa7e2;">
+                    <i class="fa fa-twitter social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.zanderwhitehurst.co/blog/hit-crowdfunding-goal.htm&title=How%20to%20hit%20200%25%20of%20your%20crowdfunding%20goal&summary=&source=" style=" background: #007ab8;" target="_blank">
+                    <i class="fa fa-linkedin social-icon"></i>
+                </a>
+                <a href="https://plus.google.com/share?url=http%3A//www.zanderwhitehurst.co/blog/hit-crowdfunding-goal.html" target="_blank" style=" background: #df4f3f;">
+                    <i class="fa fa-google-plus social-icon"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blog-post-content">
+        <div class="blog-post-date">
+            22/10/15
+        </div>
+        <div class="blog-post-subtitle">
+            How to hit 200% of your crowdfunding goal
+        </div>
+        <div class="blog-post-content">
+
+            Crowdfunding is phenomenal. It has revolutionized fundraising. For those aware and unaware of what on earth
+            it is, read on. I have built a number of crowdfunding campaigns and many friends have successfully
+            crowdfunded film, app and wearable projects. However my tips apply to every category.
+            <br><br>
+            <a class="key"  href="#platform">Platform</a>
+            <a class="key" href="#video">Video</a>
+            <a class="key"  href="#what">What, Why, How & When</a>
+            <a class="key" href="#images">Images</a>
+            <a class="key"  href="#you">You</a>
+            <a class="key" href="#perks">Perks</a>
+            <a class="key"  href="#party">Have a party</a>
+            <a class="key" href="#social">Social Media & Marketing</a>
+            <a class="key"  href="#press">Press</a>
+            <a class="key" href="#30">30% on the first day</a>
+            <a class="key" href="#sprint">Sprint Finish</a>
+            <a class="key" href="#timing">Timing</a>
+            <br><br>
+            Being based in the United Kingdom has its benefits. However, we are fashionably late to the crowdfunding
+            party. Unlike the USA, where crowdfunding is common knowledge and has been booming for the last three years,
+            the UK’s engagement with crowdfunding is limited and we are typically untrustworthy and uneasy about the
+            whole fad. From my knowledge and experience, the concept is still not embedded in society. In the USA, the
+            crowd naturally funds crowdfunding campaigns; random people pitch in to fund your project. In the UK,
+            crowdfunding could be interpreted as familyfriendfunding.
+
+            <br><br>
+            Before you consider pushing your campaign, think whether you could finance your project from an evenings
+            event or being human and asking friends and family directly; crowdfunding platforms traditionally take
+            between 4-8% of your goal. If the answer is yes, then be sensible and keep that 4-8% and take the campaign
+            offline. Don’t be a sheep and get lured into the trend.
+            <br><br>
+            If your project is bigger, better and bolder then you need to crush your crowdfunding campaign like a
+            pistachio. Follow these 12 steps and you should do just fine.
+            <br><br>
+            <span class="title" id="platform">1. Platform</span>
+            <br>
+            Which platform should you push your campaign through? It depends what type of funding you are after. Below
+            are the most popular forms of crowdfunding that have the most traction.
+            <br><br>
+            1.<strong> Equity Based Crowdfunding</strong>: Investors receive a stake in the company.
+            <br><br>
+            2.<strong> Lending Based Crowdfunding </strong>: Investors are repaid for their investment over a period of time.
+            <br><br>
+            3. <strong>Reward Based Crowfunding </strong>: Investors receive a tangible item or service in return for their funds.
+            <br><br>
+            <img src="/public/img/profile/equity.jpg">
+            <br><br>
+            If you opt for equity based crowdfunding then your choice is between seedrs or crowdcube. These are the two
+            most popular in the UK. Seedrs have hosted some notable campaigns and is one of the leading equity
+            crowdfunding platforms in the UK having raised £1.4 Million for 27 crowdfunded campaigns in their first year
+            – where the average amount invested was £631. Crowdcube have equally hosted some wild campaigns and their
+            growth is fairly similar. I would opt for Seedrs right now given their pr and traction in the UK.
+            <br><br>
+            <img src="/public/img/profile/loan.jpg">
+            <br><br>
+            If you opted for Lending based crowdfunding then there is only one platform to go with. Funding Circle has
+            crushed it. They have recently branched intro Europe which has a colossal market opportunity of more than €1
+            trillion (£733bn) in outstanding small business loans. It’s probably best suited to businesses that are
+            looking for an alternative kind of loan, in fact some would regard this as a peer to peer lending platform
+            rather than crowdfunding.
+            <br><br>
+            <img src="/public/img/profile/kick.jpg">
+            <br><br>
+            If you opted for Reward Based Crowdfunding then opt for Kickstarter. From my experience of Indeigogo I think
+            this one is a no brainer. Its User Interface is clean. The Kickstarter community is massive. Their algorithm
+            for promoting your project is sound and their ‘all or nothing’ approach encourages you to perfect your
+            campaign. As well as this, the folks who work there are brilliant and very helpful. Do it and don’t look
+            back.
+
+            <br><br>
+            <span class="title" id="video">2. Video</span>
+            <br>
+            Campaigns with videos are 50% more likely to reach their goal. How do you make a viral video? The
+            Kickstarter folk say “You can spend days shooting and editing, or you can just knock it out with a couple
+            friends on a Saturday. It doesn’t have to be perfect, it just has to be you.” It does just have to be you.
+            You have to feature; crowdfunding is about reaching a crowd and there is no better model than presenting
+            yourself and your project. Short and sharp is crucial, any longer than 3 minutes is pushing it.
+
+            <br><br>
+            <span class="title" id="what">3. What, Why, How When</span>
+            <br>
+            <strong>What have you got?</strong>
+            <br>
+            The campaign feed itself needs to feature what your product is. This should be a brief, catchy and honest.
+            Again, the shorter this is the better. A brief written summary is ideal and a catchy tagline draws in the
+            crowd. You have to remember, people are scanning your project, not studying it.
+            <br><br>
+            <strong>Why of why?</strong>
+            <br>
+            There must be a reason for why you are crowdfunding. Whether it is to go into production or continue
+            prototyping. Don’t waffle and cut to the chase. This is crucial for funders; they want to know why you need
+            their money instead of someone else’s.
+            <br><br>
+            <strong>How will you achieve your goal?</strong>
+            <br>
+            To give funder’s confidence you need to explain how you are going to spend their investment. This should be
+            a detailed timeline of your expenditure pattern. The key is to not timebox this to the exact day. Work in
+            windows and mention that x milestone will be achieved in this quarter or by this month. When building a
+            product there are so many blockers that appear from everywhere and you should add these into your
+            estimations.
+            <br><br>
+            <strong>When are you going to execute your plan?</strong>
+            <br>
+            Only you know the answer to that and funders will be keen to get a return on their investment. Within the
+            feed express your desire to reward funders asap but setting realistic delivery dates will ensure they are
+            not let down. As well as setting dates, maintaining great communication with your community is crucial.
+            Update them regularly on your projects progress and remember to prioritize pictures over text.
+            <br><br>
+            <span class="title" id="images">4. Images</span>
+            <br>
+            HD images are vital. Spreading these throughout your campaign feed is useful. It breaks up the written
+            content and keeps potential funders engaged. Show your product s evolution and stress how much effort you
+            have already put in.
+            <br><br>
+            <img src="/public/img/profile/gesture.gif">
+            <span > Glorious gestured gif </span>
+            <br> <br>
+            <br><br>
+            Also consider gifs, these are clever for showing your product in action. Kickstarters aim was to fund
+            creative projects. A lot of funders out there are creative so give them what they want and visually
+            stimulate them.
+            <br><br>
+            <span class="title" id="you">5. You</span>
+            <br>
+            Funders will need confidence in you before opening their wallet. It is helpful if you have previously backed
+            at least 5 campaigns on your chosen platform. This demonstrates that you believe in the crowdfunding model.
+            As well as this, share your history, achievements and why you are going to succeed in building this product.
+            Don’t go over the top and blow your own trumpet but give the people confidence.
+            <br><br>
+            <span class="title" id="perks">6. Perks</span>
+            <br>
+            Tactile perks supersede digital ones. People adore receiving something and opening it. For small
+            contributions consider social media plugs and be sure to make them quirky. As the amount you request becomes
+            serious, consider how much of your fund to spend. It is tragic when most of a campaigns fund is spent on
+            fulfilling their perk promises. The more personal a lower tier perk the better. It ensures you don’t blow
+            your fund on extremely expensive perks.
+            <br><br>
+            <img src="/public/img/profile/perks.jpg">
+            <span > Various perk options </span>
+            <br> <br>
+            Utilize economies of scale sensibly and do not guarantee something you cannot provide. For the upper tier
+            perks consider face-to-face meetings or an ltd edition version of your product; this is for the lovers.
+            Those that invest a lot in your idea are more likely to want to influence it. Let them. Last note on perks
+            is to limit them. The maximum number of perks you should have is 9. Of these perks, limit the number
+            available, especially in the upper bracket. 90% of the time, when given the choice between a full cookie jar
+            and a nearly empty one, we opt for the nearly empty one. It is common knowledge that we want something more
+            if it is in limited supply.
+            <br><br>
+            <span class="title" id="party">7. Have a party</span>
+            <br>
+            On the day of your launch it is absolutely 100% fundamental for you to throw a launch party. Invite friends,
+            friends of friends, friends of their friends and importantly family members. This, apart from being a fun
+            occasion, is crucial in ensuring you hit 30% of your goal in the first three days. The other positive of a
+            party is social pressure. Psychologically, we feel inclined to give more when we are not hidden behind our
+            laptop.
+            <br><br>
+            <img src="/public/img/profile/party.jpeg">
+            <span > Have a launch party </span>
+            <br> <br>
+            It is also the very beginning of your community and the more folks you can encourage to share your
+            campaign the better. Document the party and publish it on your campaign.
+            <br><br>
+            <span class="title" id="social">8. Social Media & Marketing</span>
+            <br>
+            It is obvious that you need to optimize these platforms. Be sure to have a page for each. From my
+            experience, the key is to not bombard people with your campaign. They get the idea after the first tweet or
+            post. Keep your posts visual and always link to your campaign in every post. An overall weekly summary
+            status is a must and the sprint finish is the time to go to town on multiple posts per day.
+            <br><br>
+            <img src="/public/img/profile/email-crowd.jpg">
+            <span > Typical marketing email using Illustrator & Mailchimp </span>
+            <br> <br>
+            It may surprise many people to find out that the best form of online marketing is email. I am not a fan of
+            email, but email marketing is an entirely different genre. Use mailchimp to import all of your social media
+            contacts. There is a simple hack that I am going to share with you. These emails need to be visually
+            stimulating. Mailchimp has templates but try and use illustrator to give a bolder call to action. Remember
+            to make these emails personable.
+            <br><br>
+           <strong> Step One: Sign Up for (or Sign Into) Yahoo Mail </strong>
+            <br><br>
+            Point your browser to Yahoo Mail. If you have an account, you can sign in here. If not, click the Create New
+            Account button and fill out the signup information.
+            Note: If you want a clean backup of your Facebook friends' email, I'd recommend creating a new account even
+            if you already have a Yahoo Mail account.
+            <br><br>
+            <strong>Step Two: Import Your Facebook Friends' Email Addresses </strong>
+            <br><br>
+            Now that you've signed up for (or signed into) your Yahoo Mail account, you're ready to import email from
+            Facebook. It's really easy to do. If you just signed up, you should see a prompt to import contacts from
+            Facebook, Gmail, Hotmail, and other sources. (If you already had a Yahoo Mail account, just click over to
+            the Import Contacts tool.) Click on Facebook, grant Yahoo access to your Facebook account, and then just
+            wait as the contacts are exported from Facebook and imported to Yahoo.
+            <br><br>
+            <strong>Step Three: Export Your Facebook Email Addresses from Yahoo </strong>
+            <br><br>
+            Once the import completes, you can export those email addresses in a number of formats. Again, back at the
+            Yahoo Address Book, just click on Tool -> Export (or just click here), and click the Export Now button next
+            to the export type you'd prefer.
+            <br><br>
+           <strong> Bonus Step Four: Import the Facebook Email to Mailchimp </strong>
+            <br><br>
+            Once you have setup your account on free Mailchimp account.
+            <br><br>
+            1. Export the Yahoo! CSV from Yahoo. Gmail can likely handle a lot of different file types for contact
+            import, but CSV is plain text and works like a charm.
+            <br>
+            2. Navigate to your Mailchimp Dashboard. Click ‘list’ and if you haven’t already create a ‘new list’. Open
+            this new list and find ‘add subscribers’ and select ‘import subscribers’ from the drop down.
+            <br>
+            3. Finally, select ‘import contacts from .csv or.txt files and upload your Yahoo! Exported csv. That’s a
+            wrap.
+
+            <br><br>
+            <span class="title" id="press">9. Press</span>
+            <br>
+            Press the press. There are a number of ways to do this but you should always try and hit headline home run
+            every time. I am going to focus on twitter and email for now. Nearly every journalist uses twitter. Even
+            though it is a dying platform, twitter is remarkable for getting in touch with strangers. The key is to do
+            your research.
+            <br><br>
+            Google similar products find who wrote the article on that similar product and directly compliment the
+            journalist who wrote it whilst sharing your product.
+            <br><br>
+            A typical tweet would be:
+            <br>
+            <strong>“Howdy xxx loved your piece on xxx thought you might like this [insert your campaign link]</strong>
+            <br><br>
+            It is a numbers game and not every journalist will bite but some will. You cannot force them to do a write
+            up on your product but be prepared when they get in touch. Be sure to have HD images ready and a brief pitch
+            to make journalists jobs easier.
+            <br><br>
+            <img src="/public/img/profile/wired-tweet.jpg">
+            <span > Impact of tweeting publications </span>
+            <br> <br>
+            Once you get your write up, whack the publications logo and a link to the piece in your campaign to boost publicity and awareness.
+            <br><br>
+            <span class="title" id="30">10. 30% on the first day</span>
+            <br>
+            You should aim to hit 30% of your campaign goal in the first day. This is why you have a launch party. Many
+            encourage 30% in three days but I believe the sooner the better. Once crossing the 30% milestone, statistics
+            suggest that campaigns have nearly a 90% rate of success. A recent study by Seedrs analysed the different
+            levels of pre-committed funds and its effect on the success of a campaign.
+            <br><br>
+            • Projects starting with 0% showed a 15% chance of success
+            <br>
+            • Projects beginning with 1% experienced a 27% likelihood of success
+            <br>
+            • Projects with 5% of their funds pre-committed had 50-50 odds
+            <br>
+            • Projects with 10% pre-committed discovered that their odds increased to 70%
+            <br>
+            • Projects having 20% experienced a 80% chance of success
+            <br>
+            • Projects starting with 35% or more completed their goals in every instance
+            <br><br>
+            The trick to filling the gap between 30% and 100%, however, rests in the hands of the secondary network.The
+            secondary network refers to the colloquial “friend of a friend.” While you may not know these individuals
+            intimately, the introduction, referral, or recommendation through a friend is crucial to your overall
+            success. But you cannot rely on your primary network to do all of the work for you. You need to map it out –
+            literally. Look at your own confirmed supporters and try to tie some influential individuals to each. You
+            may not get them all, but securing only a few is all you need to put things in motion.
+            With 30% under the belt, your project is validated—it instantly becomes credible. No one wants to be the
+            first to pledge money to an unknown, uncertain project. By exhausting your personal network at the
+            beginning, you ensure that those in the secondary network are already familiar with your cause, thus feeling
+            less hesitant to throw a few bucks your way. The 30% rule is an interesting and merited strategy, so it’s
+            worth considering. Before launching, try and pre-commit at least 30% (if not more), either through
+            guaranteed pledges or your own personal money.
+
+            <br><br>
+            <span class="title" id="sprint">11. Sprint Finish</span>
+            <br>
+            Your campaign should not be static. Have a few surprises up your sleeve. By surprises I mean additional
+            perks and positive project updates. Updates demonstrate you’re actively pushing your project on. Funders
+            will feed off of your energy.
+            <br><br>
+            <img src="/public/img/profile/stretch.png">
+            <span > Clever stretch goals sustain campaign momentum  </span>
+            <br> <br>
+            Keep a few perks tucked away until that sprint finish to help freshen up your campaign when it is on its last legs.Also consider executing a referral program to drive traffic midway
+            through your campaign. If you have surpassed your goal before the end of your campaign be ready to dd in a stretch goal to maintain momentum.
+            <br><br>
+            <span class="title" id="timing">12. Timing</span>
+            <br>
+            While every campaign is unique, lets use analytics to help here. On average the majority of successful
+            campaigns last 35 days. This ensures your campaign has the optimal amount of time to gain momentum, reach
+            the right folks and therefore meet your campaign goal.
+            <br><br>
+            <span class="title">That's a wrap</span>
+            <br>
+            A few short summarising points to remember, On average the majority of successful campaigns last 35 days,
+            offer 9 levels of rewards, have 8 updates from campaign owners, the founder of the campaign has an average
+            of 923 friends, the average pledge is £48, and the average video lasts 3 minutes and 4 seconds.
+            <br><br>
+            Best of luck with your campaign and do get in touch for any personalised campaign advice. I would love to hear about you crowdfunding experience. Do share it in the comments below. If you enjoyed reading this then do share it with friends.
+
+
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+             var disqus_config = function () {
+             this.page.url = http://www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-from-google.html;  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+             */
+            (function () {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//zanderwhitehurst.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+                powered by Disqus.</a></noscript>
+        <script id="dsq-count-scr" src="//zanderwhitehurst.disqus.com/count.js" async></script>
+    </div>
+</div>
+ <div data-template = "hero-recent" >
+ <div class="hero-recent">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-podcast">
+             RECENT PODCASTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    AMELIA WINGER BEARSKIN
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop" style=" background-image: url('/public/img/profile/z-podcast.jpg');">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    STARTUPS & STARTLINES
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-project" >
+ <div class="hero-recent-project">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-project">
+             RECENT PRODUCTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop"   style=" background-image: url('/public/img/projects/background-cp.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                        COMMON PENCE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop" style=" background-image: url('/public/img/projects/background-h@.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                     H@
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rectangle -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="6498675501"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-post" >
+ <div class="hero-recent-post">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-post">
+             RECENT POSTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-05 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="1730398705"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop" style=" background-image: url('/public/img/profile/surf-post.jpg');">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                        RIDE THE WAVE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                    SINUS BLASTER
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+         <div class="col-md-3 hidden-xs hidden-sm">
+             <div class="ad-block" style="text-align: center">
+
+                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                 <!-- rect-04 -->
+                 <ins class="adsbygoogle"
+                      style="display:inline-block;width:300px;height:250px"
+                      data-ad-client="ca-pub-9230205567828830"
+                      data-ad-slot="9253665507"></ins>
+                 <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                 </script>
+             </div>
+         </div>
+ </div>
+
+
+ </div>
+<div data-template ="email">
+    <div class="col-md-12">
+    <div class="email-field">
+        <div class="stay">BECOME A STARTUP SENSEI TODAY </div>
+            <!--<form action="#">
+                <div class="input">
+                    <input type="text" class="button" id="email" name="email" placeholder="Add email">
+                    <input type="submit" class="button" id="submit" value="SIGN UP">
+                </div>
+            </form>-->
+
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+                <form action="//xyz.us11.list-manage.com/subscribe/post?u=0f08ae7e014c18f2429bd8d1f&amp;id=24cb829a9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS">
+                        </div>
+                        <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-btn"></div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_0f08ae7e014c18f2429bd8d1f_24cb829a9c" tabindex="-1" value=""></div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+    </div>
+
+    </div>
+
+</div>
+<div data-template = "code-banner">
+    <div class="col-md-12 pad">
+    <div class="code-banner">
+        <div class="code-banner-text">
+           LEARN THE FUNDAMENTALS OF STARTUPS AND HOW TO CODE, IN COMFORT!
+        </div>
+        <a href="http://codelounge.xyz">
+        <div class="code-banner-join">
+                JOIN CODE LOUNGE <i class="fa fa-chevron-right"></i>
+        </div>
+        </a>
+    </div>
+    </div>
+</div>
+<!--footer.ejs-->
+<div data-template="footer">
+    <footer id="footer">
+        <div class="col-md-12 footer-tag">
+            <a class="social-foot" href="http://twitter.com/zwhitehurst" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="social-foot" href="http://instagram.com/zanderwhitehurst" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="social-foot" href="https://uk.linkedin.com/in/zanderwhitehurst" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="social-foot" href="https://soundcloud.com/ZanderWhitehurst">
+                <i class="fa fa-soundcloud"></i>
+            </a>
+            <a class="social-foot" href="https://github.com/ZanderWhitehurst">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68575506-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    var vglnk = { key: '8147e8f277a3562bb6c8fa772ec96218' };
+
+    (function(d, t) {
+        var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>
+<script src="/public/lib.js"></script>
+<script src="/public/z-w.js"></script>
+
+
+<!--<script type="text/javascript">_satellite.pageBottom();</script>-->
+</body>
+</html>

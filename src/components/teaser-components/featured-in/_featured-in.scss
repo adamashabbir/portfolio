@@ -1,0 +1,43 @@
+[data-template = "featured-in"]{
+  .featured-in{
+    position: relative;
+    background: white;
+    position: relative;
+    .recent-feature{
+      position: relative;
+      font-size: 15px;
+      line-height: 25px;
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: grey;
+      border: 1px solid grey;
+      padding-top: 5px;
+      background: white;
+    }
+
+    .line{
+      height: 1px;
+      background: grey;
+      position: absolute;
+      top: 68px;
+      left: 15px;
+      right: 15px;
+    }
+
+    .logo-n{
+      height: 225px;
+      width: 75%;
+      margin: 0 auto;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

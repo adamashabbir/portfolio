@@ -1,0 +1,50 @@
+[data-template = "code-banner"]{
+  .pad {
+    padding: 0;
+    .code-banner {
+      height: 150px;
+
+      background: #79D3BD;
+      position: relative;
+      margin: 50px 0 0 0;
+      .code-banner-text {
+        position: relative;
+        text-align: center;
+        line-height: 25px;
+        font-size: 15px;
+        color: white;
+        margin: 0 auto;
+        padding-top: 40px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      .code-banner-join {
+        position: relative;
+        font-size: 12px;
+        line-height: 25px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 5px;
+        width: 200px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        i{
+          display: inline;
+          font-size: 12px;
+          line-height: 25px;
+          color: white;
+          padding-left: 5px;
+        }
+        &:hover{
+          background: #FFB300;
+        }
+        }
+
+      }
+    }
+  }
+}

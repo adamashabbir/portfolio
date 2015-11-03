@@ -1,0 +1,232 @@
+[data-template = "podcast-hero"] {
+    .podcast-hero {
+      height: 650px;
+      position: relative;
+      background-image: url('/public/img/profile/z-listen.jpg');
+      background-size: cover;
+      background-position: center;
+
+      .lightbox {
+        /** Hide the lightbox */
+        display: none;
+
+        /** Apply basic lightbox styling */
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(255,255,255,.9);
+      }
+
+      .lightbox:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .lightbox .box {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        top: 75px;
+      }
+
+      .lightbox .title {
+        margin:0;
+        padding:0 0 10px 0;
+        font-size:30px;
+        color: grey;
+        text-align: center;
+      }
+
+      .lightbox .content {
+        display:block;
+        padding:10px 0 25px 0;
+        font-size:18px;
+        line-height:10px;
+        text-align: center;
+        color: grey;
+        a{
+          color: white;
+          color: #00d4b4;
+          padding: 10px 15px;
+          &:hover{
+            color: white;
+          }
+        }
+      }
+      .lightbox .close {
+        position: absolute;
+        text-decoration: none;
+        font-size: 47px;
+        bottom: 50px;
+        left: 50%;
+        right: 0;
+        margin: 0 auto;
+        margin-left:-20px;
+        color: grey;
+        &:hover{
+          color:#00d4b4;
+        }
+      }
+
+      .lightbox .open {
+        /** Show lightbox when mouse leaves the browser window */
+        display: block;
+        outline: none;
+      }
+
+      #mc_embed_signup {
+        background: none;
+        clear: left;
+        font-size: 14px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #mc_embed_signup .mc-field-group input {
+        background: white;
+        height: 40px;
+        font-size: 15px;
+        padding-top: 11px;
+        width: 300px;
+        margin: 0 auto;
+        color: grey;
+      }
+      #mc_embed_signup .mc-field-group {
+        clear: left;
+        position: relative;
+        padding-bottom: 3%;
+        min-height: 50px;
+      }
+
+      #mc_embed_signup_scroll {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      #mc_embed_signup input.button {
+        clear: both;
+        background: #00d4b4;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: 300px;
+        margin: 0 auto;
+        &:hover{
+          background: #00d4b4;
+        }
+
+      }
+
+      #mc_embed_signup div.mce_inline_error {
+        padding: 5px 10px;
+        width: 300px;
+        background-color: #EF3A5D;
+        font-weight: bold;
+        z-index: 1;
+        color: #fff;
+      }
+
+      #mc_embed_signup #mce-success-response {
+        color: grey;
+        font-size: 10px;
+        text-align: center;
+        display: none;
+        background: none;
+        width: 100%;
+        padding: 0 0;
+      }
+
+      #mc_embed_signup div#mce-responses {
+        float: left;
+        top: -1.4em;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        clear: both;
+        padding: 0 10px;
+      }
+
+      #mc_embed_signup form {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+      }
+
+
+
+      .overlay-podcast {
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        .podcast-icon {
+          position: relative;
+          text-align: center;
+          font-size: 40px;
+          color: white;
+          margin: 0 auto;
+          line-height: 70px;
+          padding-top: 200px;
+          i {
+
+          }
+        }
+        .podcast-tag {
+          position: relative;
+          text-align: center;
+          font-size: 40px;
+          color: white;
+          margin: 0 auto;
+          line-height: 50px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+
+        .podcast-p {
+          position: relative;
+          font-size: 15px;
+          line-height: 35px;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 15px;
+          padding-top: 5px;
+          width: 250px;
+          border: 1px solid white;
+          color: white;
+          cursor: pointer;
+          i{
+            display: inline;
+            font-size: 14px;
+            line-height: 35px;
+            padding-left: 5px;
+          }
+
+          &:hover {
+            background: #ffc200;
+          }
+        }
+
+        }
+      }
+    }
+
+  }

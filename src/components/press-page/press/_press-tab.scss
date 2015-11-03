@@ -1,0 +1,78 @@
+@media (max-width: 991px){
+  [data-template="press"]{
+    .pad{
+      padding: 0;
+      .press{
+        height: 300px;
+        background: #f0f5f2;
+        position: relative;
+
+
+        .press-title {
+          text-align: center;
+          font-size: 45px;
+          line-height: 50px;
+          color: #647370;
+          padding-top: 125px;
+          padding-bottom: 10px;
+
+        }
+
+        .press-line{
+          height: 5px;
+          background: #647370;
+          width: 100px;
+
+          margin: 0 auto;
+        }
+      }
+
+      .press-pack{
+        background: #fcfcfc;
+        position: relative;
+        text-align: center;
+        height: 200px;
+        img{
+          margin: 0 auto;
+          position: absolute;
+          bottom: 30px;
+          right: 0;
+          left: 0;
+          cursor: pointer;
+          opacity: 0;
+        }
+        .press-tag{
+          position: absolute;
+          top: 60px;
+          left: 50px;
+          right: 50px;
+          font-size: 14px;
+          line-height: 25px;
+          color: #53c9a7;
+          text-decoration: none;
+        }
+        span{
+          position: absolute;
+          text-align: center;
+          font-size: 20px;
+          line-height: 25px;
+          top: 20px;
+          left: 0;
+          right: 0;
+        }
+
+        &:hover{
+          background: #647370;
+          img{
+            opacity: 1;
+          }
+          span, .press-tag{
+            color: white;
+          }
+        }
+
+      }
+
+    }
+  }
+}

@@ -1,19 +1,37 @@
-var app = angular.module('hub-on-hub', []);
+(function(){
+    app.controller('BioCtrl', ['$scope', function($scope){
+
+        $(document).ready(function(){
+            $('.bio-page-title').velocity('stop').velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.bio-underline').velocity('stop').velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.bio-tag-01').velocity('stop').velocity("transition.slideLeftBigIn", {duration: 2000});
+            $('.z-bio-icon').velocity('stop').velocity("transition.shrinkIn", {duration: 2500});
+            $('.z-bio-tag').velocity('stop').velocity("transition.slideUpBigIn", {duration: 2500});
+
+        });
+
+
+    }]);
+}());
 (function () {
 
 
     var GAEvents = [
-        ['.bio-jump', 'Bio interaction', 'Bio Hero'],
-        ['.project-jump', 'Project interaction', 'Project Hero'],
-        ['.press-jump', 'Press interaction', 'Press Hero'],
-        ['.collaborate-jump', 'Collaborate interaction', 'Collaborate Hero'],
-        ['.menu-btn', 'Menu interaction', 'Menu Btn'],
-        ['.twitter-foot', 'Twitter interaction', 'Twitter Footer'],
-        ['.linked-foot', 'Linked Interaction', 'Linked footer'],
-        ['.github-foot', 'Git Interaction', 'Git Footer'],
-        ['.email-foot', 'Email Interaction', 'Email Footer'],
-        ['.slider-nav', 'Project Nav', 'Carousel Nav'],
-        ['.project-site', 'Project View', 'Project View']
+        ['.hero-main-p', 'hero-main-button', 'home hero button'],
+        ['.hero-tag', 'hero-trio-button', 'home trio button'],
+        ['.podcast-backdrop', 'podcast-small', 'podcast small'],
+        ['.product-backdrop', 'product-small', 'product-small'],
+        ['.post-backdrop', 'post-small', 'post-small'],
+        ['.code-banner-join', 'code-lounge-button', 'code-lounge button'],
+        ['.header-tabs', 'header-tabs', 'header tabs'],
+        ['.menu-btn', 'burger-menu', 'burger menu'],
+        ['.tabs', 'burger-menu-tabs', 'burger menu tabs'],
+        ['.social-icons', 'burger-menu-social', 'burger menu social icons'],
+        ['.podcast-p', 'podcast-hero-button', 'podcast hero button'],
+        ['.podcast-back', 'podcast-person', 'podcast-person'],
+        ['.lifestyle-p', 'lifestyle-hero-button', 'lifestyle hero button'],
+        ['.blog-post-backdrop', 'blog-post', 'lifestyle hero button'],
+        ['.social-foot', 'social-icon-footer', 'social icons footer']
     ];
 
 
@@ -29,16 +47,6 @@ var app = angular.module('hub-on-hub', []);
     }
 
     console.log(GAEvents);
-}());
-(function(){
-    app.controller('BioCtrl', ['$scope', function($scope){
-
-        $(document).ready(function(){
-            $('.bio-tag-01').velocity('stop').velocity("transition.shrinkIn", {duration: 1000});
-        });
-
-
-    }]);
 }());
 (function(){
     app.controller('BioEdCtrl', ['$scope', function($scope){
@@ -64,7 +72,11 @@ var app = angular.module('hub-on-hub', []);
     app.controller('ColCtrl', ['$scope', function ($scope) {
 
         $( document ).ready(function() {
-            $('.collaborate-link').velocity("stop").velocity("transition.perspectiveDownIn", {duration: 800});
+            $('.bio-page-title').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.bio-underline').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.collaborate-link').velocity("stop").velocity("transition.shrinkIn", {duration: 2000});
+            $('.collaborate-link .collaborate-tag').velocity("stop").velocity("transition.slideDownBigIn", {stagger: 500});
+
         });
 
 
@@ -81,9 +93,9 @@ var app = angular.module('hub-on-hub', []);
     app.controller('HeroCtrl', ['$scope', function ($scope) {
 
         $( document ).ready(function() {
-            $('.tag').velocity("stop").velocity("transition.slideUpBigIn", {duration: 800});
-            $('.about').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1000});
-            $('.jump').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.tag').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1000});
+            $('.about').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.jump').velocity("stop").velocity("transition.slideUpBigIn", {duration: 2000});
 
         });
 
@@ -92,72 +104,30 @@ var app = angular.module('hub-on-hub', []);
     }]);
 }());
 
-(function(){
-    app.controller('HeroProjectCtrl', ['$scope', function($scope){
+(function () {
+    app.controller('LifestyleBlogCtrl', ['$scope', function ($scope) {
+     $("video")
+            .on('mouseenter', function(){
+                $(this).get(0).play();
+            })
+            .on('mouseleave', function(){
+                $(this).get(0).pause();
+            })
 
+ /*
+         $("video").hover( hoverVideo, hideVideo );
 
-        $(document).ready(function () {
+        function hoverVideo(e) {
+            $(this).get().play();
+        }
 
-
-            $(".right-nav").velocity({translateX: 50}, {loop: true},3000);
-
-
-            var fullWidth = $( window ).width();
-
-            var n = $(".slider-slide-wrap").length,
-                width = fullWidth,
-                newwidth = width * n;
-
-            $('.slide-wrap').css({
-                'width': newwidth
-            });
-
-            $(".slider-slide-wrap").each(function (i) {
-                var thiswid = fullWidth;
-                $(this).css({
-                    'left': thiswid * i
-                });
-
-            });
-            /*on scroll move the indicator 'shown' class to the
-             most visible slide on viewport
-             */
-            $('.slider-wrap').scroll(function () {
-                var scrollLeft = $(this).scrollLeft();
-                $(".slider-slide-wrap").each(function (i) {
-                    var posLeft = $(this).position().left
-                    var w = $(this).width();
-
-                    if (scrollLeft >= posLeft && scrollLeft < posLeft + w) {
-                        $(this).addClass('shown').siblings().removeClass('shown');
-                    }
-                });
-            });
-            /* on left button click scroll to the previous sibling of the current visible slide */
-            $('#slider-left').click(function () {
-                var $prev = $('.slide-wrap .shown').prev();
-
-                if ($prev.length) {
-                    $('.slider-wrap').animate({
-                        scrollLeft: $prev.position().left
-                    }, 'slow');
-                }
-            });
-            /* on right button click scroll to the next sibling of the current visible slide */
-            $('#slider-right').click(function () {
-                var $next = $('.slide-wrap .shown').next();
-
-                if ($next.length) {
-                    $('.slider-wrap').animate({
-                        scrollLeft: $next.position().left
-                    }, 'slow');
-                }
-            });
-        });
-
+        function hideVideo(e) {
+            $(this).get().pause();
+        }*/
 
     }]);
 }());
+
 (function () {
     app.controller('MenuCtrl', ['$scope', function ($scope) {
 
@@ -178,8 +148,8 @@ var app = angular.module('hub-on-hub', []);
                 //#show
                 $menuNav
                     .velocity('stop')
-                    .velocity("transition.slideLeftIn", 500);
-                $('.menu-nav .tabs').velocity("stop").velocity("transition.slideLeftIn",{stagger: 100});
+                    .velocity("transition.slideRightIn", 500);
+                $('.menu-nav .tabs').velocity("stop").velocity("transition.slideRightIn",{stagger: 100});
                 $('.menu-nav .social').velocity("stop").velocity("transition.bounceUpIn",{stagger: 600});
             }
 
@@ -190,7 +160,7 @@ var app = angular.module('hub-on-hub', []);
             if (++count % 2 == 0) {
                 $menuNav
                     .velocity('stop')
-                    .velocity("transition.slideLeftOut", 300);
+                    .velocity("transition.slideRightOut", 300);
             }
             return false;
         });
@@ -198,13 +168,33 @@ var app = angular.module('hub-on-hub', []);
 
     }]);
 }());
-(function(){
-    app.controller('ProjectShowCtrl', ['$scope', function($scope){
 
-        if ('.item active'){
-            $('.image').velocity('stop').velocity('transition.slideLeftIn', {duration: 800});
-            $('.text-box').velocity('stop').velocity('transition.slideLeftIn', {duration: 800});
-        }
+
+(function () {
+    app.controller('PressCtrl', ['$scope', function ($scope) {
+
+        $( document ).ready(function() {
+            $('.press-title').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.press-line').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.press-pack').velocity("stop").velocity("transition.slideLeftBigIn", {duration: 2000});
+
+        });
+
+
+
+    }]);
+}());
+(function () {
+    app.controller('ProjectPageCtrl', ['$scope', function ($scope) {
+
+        $( document ).ready(function() {
+            $('.project-page-title').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.project-underline').velocity("stop").velocity("transition.slideUpBigIn", {duration: 1500});
+            $('.project-backdrop').velocity("stop").velocity("transition.slideLeftBigIn", {duration: 2500});
+
+        });
+
+
 
     }]);
 }());

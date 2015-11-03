@@ -1,0 +1,188 @@
+[data-template = "project-post"]{
+  .project-post{
+    position: relative;
+
+    .pad{
+      padding: 0;
+      .project-title-backdrop {
+       height: 300px;
+        background: #f0f5f2;
+
+
+        .project-page-title {
+          text-align: center;
+          font-size: 45px;
+          line-height: 50px;
+          color: #647370;
+          padding-top: 125px;
+          padding-bottom: 10px;
+          display: none;
+
+        }
+
+
+
+        .project-underline{
+          height: 5px;
+          background: #647370;
+          width: 215px;
+
+          margin: 0 auto;
+          display: none;
+        }
+      }
+
+      .project-backdrop {
+        height: 400px;
+        background-image: url("/public/img/projects/background-cp.jpg");
+        background-size: cover;
+        background-position: center;
+        display: none;
+        margin: 25px 0;
+        .project-overlay {
+          background: rgba(0,0,0,.5);
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          &:hover{
+            background: rgba(0,0,0,.8);
+            .project-title{
+              opacity: 0;
+            }
+            .project-page-tag{
+              opacity: 0;
+            }
+
+
+            .project-page-tech-stack{
+              opacity: 1;
+            }
+            .project-page-tech{
+              opacity: 1;
+            }
+
+            .arrow{
+              opacity: 1;
+            }
+          }
+
+          .project-title {
+            text-align: center;
+            font-size: 55px;
+            line-height: 55px;
+            color: white;
+            padding-top: 100px;
+            z-index: 10;
+            opacity: 1;
+          }
+          .project-page-tag {
+            text-align: center;
+            font-size: 25px;
+            line-height: 35px;
+            color: white;
+            padding: 25px 250px 0 250px;
+            z-index: 10;
+            opacity: 1;
+          }
+
+          .project-page-tech-stack {
+            text-align: center;
+            font-size: 45px;
+            line-height: 55px;
+            color: #d860b6;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            right: 300px;
+            opacity: 0;
+          }
+
+          .project-page-tech {
+            text-align: center;
+            font-size: 25px;
+            line-height: 35px;
+            color: #d860b6;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+            right: 250px;
+            opacity: 0;
+          }
+
+          .arrow{
+            text-decoration: none;
+            .link-box {
+              position: absolute;
+              width: 200px;
+              border: 1px solid white;
+              height: 40px;
+              line-height: 40px;
+              left: 50%;
+              margin-left: -100px;
+              top: 300px;
+              color: white;
+              font-size: 18px;
+              text-align: center;
+i{
+  padding-left: 5px;
+  line-height: 40px;
+  font-size: 14px;
+}
+              &:hover{
+                background: #00d4b4;
+              }
+            }
+          }
+        }
+      }
+
+      .project-page-overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.4);
+      }
+
+
+      .b3d{
+        background-image: url("/public/img/projects/b3dhead.jpg");
+      }
+
+      .hwdy{
+        background-image: url("/public/img/projects/hwdy.jpg");
+      }
+
+      .alumnow{
+        background-image: url("/public/img/projects/alumnow.jpg");
+      }
+
+      .hat{
+        background-image: url("/public/img/projects/background-h@.jpg");
+      }
+
+      .splinter{
+        background-image: url("/public/img/projects/splinter.jpg");
+      }
+
+      .ocado{
+        background-image: url("/public/img/projects/ocado.jpg");
+      }
+
+      .y{
+        background-image: url("/public/img/projects/y-design.jpg");
+      }
+
+      .doll{
+        background-image: url("/public/img/projects/doll.jpg");
+      }
+
+      .balloon{
+        background-image: url("/public/img/projects/balloon.jpg");
+      }
+    }
+  }
+}

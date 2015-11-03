@@ -1,0 +1,159 @@
+@media(max-width: 991px){
+  [data-template = "email-podcast"] {
+
+    .email-podcast {
+      position: relative;
+      height: 300px;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+
+      .stay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        color: grey;
+        font-size: 18px;
+        line-height: 90px;
+        text-align: center;
+      }
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+
+        .input {
+          position: absolute;
+          padding-top: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .button {
+          height: 44px;
+          border: none;
+        }
+
+        #email {
+          width: 300px;
+          background: #FDFCFB;
+          font-family: inherit;
+          color: #737373;
+          line-height: 46px;
+          font-size: 16px;
+          text-indent: 5%;
+        }
+
+        #submit {
+          width: 125px;
+          height: 46px;
+          line-height: 46px;
+          font-size: 16px;
+          background: #E86C8D;
+          font-family: inherit;
+          font-weight: bold;
+          color: white;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: background .3s ease-in-out;
+        }
+
+        #submit:hover {
+          background: #d45d7d;
+          color: white;
+        }
+
+        input:focus {
+          outline: none;
+          outline: 2px solid #E86C8D;
+          box-shadow: 0 0 2px #E86C8D;
+        }
+
+      }
+
+      #mc_embed_signup {
+        background: none;
+        clear: left;
+        font-size: 14px;
+        display: block;
+        margin-top: 90px
+      }
+      #mc_embed_signup .mc-field-group input {
+        background: white;
+        height: 40px;
+        font-size: 15px;
+        padding-top: 11px;
+        width: 300px;
+      }
+      #mc_embed_signup .mc-field-group {
+        clear: left;
+        position: relative;
+        padding-bottom: 3%;
+        min-height: 50px;
+      }
+
+      #mc_embed_signup_scroll {
+        width: 300px;
+      }
+
+      #mc_embed_signup input.button {
+        clear: both;
+        background: #FFB300;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: 300px;
+        &:hover{
+          background: #EA9C00;
+        }
+
+      }
+
+      #mc_embed_signup div.mce_inline_error {
+        padding: 5px 10px;
+        width: 300px;
+        background-color: #EF3A5D;
+        font-weight: bold;
+        z-index: 1;
+        color: #fff;
+      }
+
+      #mc_embed_signup #mce-success-response {
+        color: grey;
+        font-size: 10px;
+        text-align: center;
+        display: none;
+        background: none;
+        width: 100%;
+        padding: 0 0;
+      }
+
+      #mc_embed_signup div#mce-responses {
+        float: left;
+        top: -1.4em;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        clear: both;
+        padding: 0 10px;
+      }
+
+      #mc_embed_signup form {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+  }
+}

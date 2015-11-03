@@ -1,0 +1,93 @@
+@media (max-width: 991px){
+  [data-template = "bio-skill"] {
+    .skill-color {
+      position: relative;
+      height: 2850px;
+
+      .pad {
+        padding: 0;
+      }
+
+      .skills-back {
+        height: 300px;
+        background: #f0f5f2;
+        i {
+          position: absolute;
+          top: 110px;
+          font-size: 30px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #1DB7A8;
+        }
+
+        .skills {
+          position: absolute;
+          top: 160px;
+          font-size: 30px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: grey;
+        }
+      }
+
+      .key {
+        height: 150px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        .mob-dots {
+          display: inline;
+
+          .dots {
+            display: inline;
+            text-align: center;
+            padding: 0 50px;
+            line-height: 150px;
+            strong {
+              padding-left: 20px;
+            }
+          }
+        }
+
+      }
+
+      .design-circle {
+        color: orangered;
+      }
+
+      .developer-circle {
+        color: purple;
+      }
+
+      .hard-circle {
+        color: #DA70D6;
+      }
+
+      .management-circle {
+        color: #FFB300;
+      }
+
+      .skill-col {
+        height:1200px;
+        .skill {
+          font-size: 16px;
+          line-height: 70px;
+          padding: 0 25px;
+          margin: 0 25px;
+          border-bottom: 1px solid lightslategrey;
+          color: grey;
+          strong {
+            padding-left: 25px;
+          }
+          .circle {
+            color: cadetblue;
+          }
+
+        }
+      }
+    }
+  }
+}

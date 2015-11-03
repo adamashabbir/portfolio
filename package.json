@@ -1,5 +1,5 @@
 {
-  "name": "hub-on-hub",
+  "name": "z-w",
   "version": "0.1.0",
   "description": "",
   "main": "server/app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/whitbread-eos/hub-on-hub.git"
+    "url": "https://github.com/zanderwhitehurst/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/whitbread-eos/hub-on-hub/issues"
+    "url": "https://github.com/zanderwhitehurst/portfolio/issues"
   },
-  "homepage": "https://github.com/whitbread-eos/hub-on-hub",
+  "homepage": "https://github.com/zanderwhitehurst/portfolio",
   "dependencies": {
     "del": "1.1.1",
     "ejs": "2.3.1",

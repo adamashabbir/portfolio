@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="//assets.adobedtm.com/9b346bffe2591722c64f88bf101c0664c8936e16/satelliteLib-93e274c58a6ad1ed12b80e4d8c0a01144cd6e324.js"></script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Zander Whitehurst</title>
+
+    <link rel="stylesheet" href="/public/lib.css"/>
+    <link rel="stylesheet" href="/public/z-w.css"/>
+    <link rel="stylesheet" href="/public/fonts/fonts.css"/>
+    <link rel="stylesheet" href="/public/fontawesome/css/font-awesome.min.css"/>
+    <link rel="shortcut icon"
+          href="http://zanderwhitehurst.co/favicon-z.ico"
+          type="image/x-icon" />
+
+    <meta property="og:title"
+          content="Zander Whitehurst | Why I turned down a job at Google" />
+
+
+    <meta property="og:url"
+          content="http://www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-at-google.html" />
+
+    <meta property="og:description" content=" My personal relationship with Google has been the longest of any of my many digital romances. There have
+            been troughs but mainly peeks in our engagement." />
+
+
+    <meta property="og:image"
+          content="http://zanderwhitehurst.co/public/img/profile/googly.jpg" />
+
+
+</head>
+<body data-ng-app="z-w" class="<%= content.class %>">
+
+<div data-template="menu" data-ng-controller="MenuCtrl">
+    <div class="menu-nav">
+        <div class="nav-header">
+            <div class="nav-close">
+                <div class="fa fa-times"></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="tabs"> <i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="http://codelounge.xyz" target="_blank" class="tabs">  <i class="fa fa-code"></i> LEARN</a></li>
+            <li><a href="/lifestyle.html" class="tabs"> <i class="fa fa-camera"></i> BLOG</a></li>
+            <li><a href="/podcast.html" class="tabs"> <i class="fa fa-headphones"></i> PODCAST</a></li>
+            <li><a href="/bio.html" class="tabs">  <i class="fa fa-heart"></i> LIFE</a></li>
+            <li><a href="/press.html" class="tabs">  <i class="fa fa-newspaper-o"></i> APPS</a></li>
+        </ul>
+        <div class="social">
+            <li>
+                <a class="first" href="http://twitter.com/zwhitehurst" target="_blank"><i class="fa fa-twitter social-icons"></i></a>
+                <a href="http://linkedin.com/zanderwhitehurst" target="_blank"><i class="fa fa-linkedin social-icons"></i></a>
+                <a href="http://github.com/zanderwhitehurst" target="_blank"><i class="fa fa-github social-icons"></i></a>
+                <a href="http://instagram.com/zanderwhitehurst" target="_blank"><i class="fa fa-instagram social-icons"></i></a>
+            </li>
+        </div>
+    </div>
+</div>
+<div data-template="header" data-ng-controller="HeaderCtrl">
+    <div class="header">
+        <div class="logo">
+            <div class="name">
+                <a href="/index.html">
+                ZANDER<span>WHITEHURST</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/advertise.html">
+                <i class="fa fa-star-o"></i>
+                AD
+            </a>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/bio.html">
+                <i class="fa fa-play"></i>
+                STORY
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/lifestyle.html">
+                <i class="fa fa-heart"></i>
+                LIFE
+            </a>
+        </div>
+        <div class="header-tabs">
+            <a href="/podcast.html">
+                <i class="fa fa-headphones"></i>
+                LISTEN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/blog.html">
+                <i class="fa fa-code"></i>
+                LEARN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/products.html">
+                <i class="fa fa-lightbulb-o"></i>
+                LAUNCH
+            </a>
+        </div>
+
+       <!-- <div class="menu-btn">
+            <div class="fa fa-bars"></div>
+            &lt;!&ndash;<div class="menu-txt">Menu</div>&ndash;&gt;
+        </div>-->
+
+        <div class="mobile-nav">
+            <div class="mini-tabs">
+                <a href="/index.html">
+                    <i class="fa fa-home"></i>
+                    HOME
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/bio.html">
+                    <i class="fa fa-play"></i>
+                    STORY
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/lifestyle.html">
+                    <i class="fa fa-heart"></i>
+                    LIFE
+                </a>
+            </div>
+            <div class="mini-tabs">
+                <a href="/podcast.html">
+                    <i class="fa fa-headphones"></i>
+                    LISTEN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/blog.html">
+                    <i class="fa fa-code"></i>
+                    LEARN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/products.html">
+                    <i class="fa fa-lightbulb-o"></i>
+                    LAUNCH
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-template="blog-post-001" data-ng-controller="BlogPost001Ctrl">
+    <div class="blog-post-hero">
+        <div class="blog-post-hero-overlay">
+            <div class="blog-post-title">
+                WHY I TURNED DOWN A JOB AT GOOGLE
+            </div>
+            <div class="read-time">
+                4 minute read
+            </div>
+
+            <div class="share">
+                TAKE CARE & SHARE
+            </div>
+            <div class="blog-post-social">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//zanderwhitehurst.co/blog/why-i-turned-down-a-job-at-google.html"
+                   target="_blank"><i class="fa fa-facebook social-icon"></i>
+                </a>
+                <a href="https://twitter.com/home?status=Why%20I%20turned%20down%20a%20job%20at%20Google%20-%20http%3A//www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-at-google.html%20%40zanderwhitehurst"
+                   target="_blank" style=" background: #1aa7e2;">
+                    <i class="fa fa-twitter social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-at-google.html&title=Why%20I%20turned%20down%20a%20job%20at%20Google&summary=&source="
+                   style=" background: #007ab8;" target="_blank">
+                    <i class="fa fa-linkedin social-icon"></i>
+                </a>
+                <a href="https://plus.google.com/share?url=http%3A//www.zanderwhitehurst.co/blog/every-23-year-old.html"
+                   target="_blank" style=" background: #df4f3f;">
+                    <i class="fa fa-google-plus social-icon"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blog-post-content">
+        <div class="blog-post-date">
+            22/10/15
+        </div>
+        <div class="blog-post-subtitle">
+            WHY I TURNED DOWN A JOB AT GOOGLE
+        </div>
+        <div class="blog-post-content">
+            <span class="title"> J'adore Google </span>
+            <br>
+            I adore Google. Who doesn’t? It has improved my life. Google Chrome has, for me, made learning how to code
+            easy. I have become obsessed with utilizing and embedding Google Analytics into UX design decisions. The
+            real-time Google Analytics alone on this article is addictive. A great product is something we cannot live
+            without. Googles search engine alone is something I cannot imagine life without it. As you can tell I have
+            the utmost respect for Google and the majority of its digital and tactile products.
+            <br> <br>
+            My personal relationship with Google has been the longest of any of my many digital romances. There have
+            been troughs but mainly peeks in our engagement over the years. I recently became skeptical about Googles
+            ageing appearance and was relieved when their design team did a little pixel surgery earlier this month.
+            Google has always enticed me, for the exact same reasons it has probably gripped you over the years but lets
+            not waffle over these for now.
+            <br>
+            <img src="/public/img/profile/google.gif">
+            <span > Googles recent rebranding </span>
+            <br> <br>
+            Sadly, my professional experience of Google has been less tantalizing. Earlier this month I was headhunted
+            by Goldman Sachs. Unlike Google, I hate Goldman Sachs. Many of my friends are willing to lose a limb to
+            become enslaved there. However, everything I stand for, they don’t. Saying this, their initial recruitment
+            process superseded Googles. I was baffled to read their personable pitch, which differed somewhat from
+            Googles, who ignored the first fourteen of my applications without giving any feedback. I
+            was shocked when Google did eventually reach out, inviting me for an initial chat.
+            <br> <br>
+            <span class="title"> Ring ring  </span>
+            <br>
+            The initial chat, over the phone, discussing my experiences, education, interests and learnings went well.
+            Following this I had six elongated interviews with Google over a period of six weeks, three on the phone and
+            three over Google Hangout. It sounds a lot but once broken down it equated to one a week. My offer had to be
+            confirmed in the States before finding its way to my inbox. This process took approximately one month. This
+            was the first issue for me. I was a graduate and not a supremely talented one at that but to give a single
+            graduate an offer took Google over 1,680 hours. This made me nervous. If it took this amount of time to fire
+            over a couple of A4 pages, how long would it take me to creatively influence a pixel on any of their
+            products? Too long I decided.
+            <br><br>
+            I realize the logistical nightmare of organizing a face-to-face interview,
+            however for me it is a very useful practice. Not only do you actually make eye contact with the interviewer
+            but you also get an opportunity to explore the studio and workspace. It is vital, from my experience, to ask
+            to see the studio during a face-to-face interview. Key things I consider are whether there is opportunity
+            for collaboration? Are the people genuinely happy? Is my team a team or a bunch of individuals? What is
+            their tech stack? What are their realistic working hours? Am I going to fit in and learn a lot? Most
+            importantly, am I going to enjoy working here? All of these are almost impossible to pick up on during a
+            phone interview or via hangout.
+            <br> <br>
+            <img src="/public/img/profile/google.jpg">
+            <span>Googles groovy offices</span>
+            <br> <br>
+            Before I move on from the interviews themselves I wanted to share my experience of these. Given it was
+            Google; I was expecting some whacky questions and tricky case studies. I had heard rumors and even seen the
+            films. Instead, I was upset to be asked the typical questions every enterprise company does. For me this
+            demonstrates a lack of imagination, preparation and curiosity. An interview should be a conversation sharing
+            subjective viewpoints about a topic, project or habit. The aim should be to discover whether that
+            individual, firstly knows their stuff, secondly can learn their stuff and finally is just a nice human
+            being. Instead I was bombarded with several ‘Tell us a time you have successfully lead a team’ and
+            ‘Where do you want to be in five years?’ When an interviewer is talking to a piece of paper with copied and
+            pasted content on, you know its not the right place for you to flourish.
+            <br> <br>
+
+            This leads me on to my next concern. Once you are in Google, you don’t leave and why would you? It is no
+            mystery that working at Google is financially lucrative. It also encourages employees to lead a balanced
+            lifestyle having pretty much invented 20% downtime. However, I was advised against joining Google by one of
+            their own. Blasphemy right? Well not exactly.
+            <br><br>
+            My friend has been at Google for five years and is yet to
+            progress up their digital ladder. They are talented, young and overflowing with ideas. In any startup they
+            would be competing for CTO. Instead, because no one above them is budging, they are forced to join Googles
+            clogged up career conveyor belt. This is a contemporary dilemma for any huge organization and one that
+            contributed to my decision. For me personal growth and development is vital. Blockers in dev practices pop
+            up all the time, but they are fixed fairly swiftly on most occasions. However, a permanent blocker, stunting
+            personal development is detrimental.
+            <br> <br>
+            <img src="/public/img/profile/climber.png">
+            <span>Tricky to spot the clingers from the climbers</span>
+            <br> <br>
+            Clingers should not restrict influencers and climbers. A lot of young and
+            not so young, keen and talented folks are crushed against this dam of digital dinosaurs. This is why
+            startups succeed; they don’t have to deal with legacy products, digital dinosaurs or copious amount of red
+            tape. As well as this startups are personal places and everyone should, if it’s a successful startup, know
+            everyone else. This personable approach makes learning enjoyable. Additionally, you learn faster when you
+            have more responsibilities.
+            <br> <br>
+            <span class="title"> "You will be set for life" </span>
+            <br>
+            Everyone I knew told me to take the job. ‘You will be set for life’ they told me. As a base, having Google
+            on your CV straight out of University is impressive and desirable for most employers. Well I don’t want to
+            be set for life and I don’t need ‘Google’ on my CV to get a job ‘anywhere’. If anything, I think having
+            Google on your CV for the sake of it is sheepish.
+            <br><br>
+            Taking a job for the sake of the brand has a huge
+            opportunity cost, mainly happiness. I have too many friends who join organizations for the brand and not the
+            job. All of them are unhappy. For me every working individual should be empowered, appreciated and
+            influential whilst adoring his or her job.
+            <br><br>
+            I believe that taking a job in order to get another job elsewhere, a couple of years down the line, is also a negative practice and slippery slope. As we age we gain more
+            commitments. These commitments tend to have financial costs. Thus the original job we opted for, as a
+            springboard, is now paying well and with a healthy bonus round the corner is subsequently harder to leave.
+            More real-time thinking into the situation is useful.
+
+            <br> <br>
+            <span class="title"> Ciao ciao for now </span>
+            <br>
+            Saying ‘no thanks but maybe next time’ to Google was not an easy decision. However it was definitely the
+            right one for me and one that I made alone. I thanked them for the opportunity and mentioned my desire to
+            begin my own startup whilst working as a front-end developer in central London. They respected my decision
+            and wished me the best of luck.
+            <br> <br>
+            It was a year today that I turned down a job a Google. I can say with confidence that my experience so far
+            has taught me ten times more than I personally would have learnt at Google as a graduate. I encourage
+            everyone I meet to at least once try and build his or her own product. It is a terrific learning process and
+            highly rewarding. If it fails then great, you will have learnt a lot. Also, many employers highly respect
+            and cherish entrepreneurship in this day and age, so getting a job will be far easier.
+            <br> <br>
+            <span class="title"> Fail and Learn </span>
+            <br>
+            I have failed many times and it has taught me so much about crucial ux design, code based prototypes, 3D
+            printed prototypes, full stack development, client engagement and disengagement, crowdfunding and flopping,
+            growth hacking, data feedback loops, habit forming products, monetizing, retention and obviously startup
+            sustainability both nationally and internationally.
+            <br> <br>
+            <img src="/public/img/projects/background-cp.jpg">
+            <span>First iteration of Common Pence</span>
+            <br> <br>
+            My learning and hard work was recognized when Founders Forum named me one of the top ten young British Entrepreneurs in 2015. My startup Common Pence is a donation
+            platform that utilizes Contactless and NFC technology, making it easier for people to give money to charity.
+            It is currently undergoing user testing in Australia and New Zealand. For me it has been a pleasure to
+            build, iterate and be a part of and thanks to everyone who has made it happen.
+            <br> <br>
+           <span class="title"> That’s a wrap </span>
+            <br>
+            My experience should not hinder anyone at all from joining or applying to Google. If anything I hope it
+            encourages people to give it a crack and form their own opinion from their own experience. If you have had
+            an experience with Google that you wish to share or have an opinion on my decision to do my own thing do
+            share it in the comments below. Thanks a bunch and if you enjoyed reading this do take the time to share it
+            with your friends.
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+             var disqus_config = function () {
+             this.page.url = http://www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-from-google.html;  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+             */
+            (function () {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//zanderwhitehurst.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+                powered by Disqus.</a></noscript>
+        <script id="dsq-count-scr" src="//zanderwhitehurst.disqus.com/count.js" async></script>
+    </div>
+</div>
+ <div data-template = "hero-recent" >
+ <div class="hero-recent">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-podcast">
+             RECENT PODCASTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    AMELIA WINGER BEARSKIN
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop" style=" background-image: url('/public/img/profile/z-podcast.jpg');">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    STARTUPS & STARTLINES
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-project" >
+ <div class="hero-recent-project">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-project">
+             RECENT PRODUCTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop"   style=" background-image: url('/public/img/projects/background-cp.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                        COMMON PENCE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop" style=" background-image: url('/public/img/projects/background-h@.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                     H@
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rectangle -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="6498675501"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-post" >
+ <div class="hero-recent-post">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-post">
+             RECENT POSTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-05 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="1730398705"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop" style=" background-image: url('/public/img/profile/surf-post.jpg');">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                        RIDE THE WAVE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/lifestyle.html">
+         <div class="post-backdrop">
+             <div class="post-small-overlay">
+                 <div class="post-name">
+                    SINUS BLASTER
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+         <div class="col-md-3 hidden-xs hidden-sm">
+             <div class="ad-block" style="text-align: center">
+
+                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                 <!-- rect-04 -->
+                 <ins class="adsbygoogle"
+                      style="display:inline-block;width:300px;height:250px"
+                      data-ad-client="ca-pub-9230205567828830"
+                      data-ad-slot="9253665507"></ins>
+                 <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                 </script>
+             </div>
+         </div>
+ </div>
+
+
+ </div>
+<div data-template ="email">
+    <div class="col-md-12">
+    <div class="email-field">
+        <div class="stay">BECOME A STARTUP SENSEI TODAY </div>
+            <!--<form action="#">
+                <div class="input">
+                    <input type="text" class="button" id="email" name="email" placeholder="Add email">
+                    <input type="submit" class="button" id="submit" value="SIGN UP">
+                </div>
+            </form>-->
+
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+                <form action="//xyz.us11.list-manage.com/subscribe/post?u=0f08ae7e014c18f2429bd8d1f&amp;id=24cb829a9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS">
+                        </div>
+                        <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-btn"></div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_0f08ae7e014c18f2429bd8d1f_24cb829a9c" tabindex="-1" value=""></div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+    </div>
+
+    </div>
+
+</div>
+<div data-template = "code-banner">
+    <div class="col-md-12 pad">
+    <div class="code-banner">
+        <div class="code-banner-text">
+           LEARN THE FUNDAMENTALS OF STARTUPS AND HOW TO CODE, IN COMFORT!
+        </div>
+        <a href="http://codelounge.xyz">
+        <div class="code-banner-join">
+                JOIN CODE LOUNGE <i class="fa fa-chevron-right"></i>
+        </div>
+        </a>
+    </div>
+    </div>
+</div>
+<!--footer.ejs-->
+<div data-template="footer">
+    <footer id="footer">
+        <div class="col-md-12 footer-tag">
+            <a class="social-foot" href="http://twitter.com/zwhitehurst" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="social-foot" href="http://instagram.com/zanderwhitehurst" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="social-foot" href="https://uk.linkedin.com/in/zanderwhitehurst" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="social-foot" href="https://soundcloud.com/ZanderWhitehurst">
+                <i class="fa fa-soundcloud"></i>
+            </a>
+            <a class="social-foot" href="https://github.com/ZanderWhitehurst">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68575506-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    var vglnk = { key: '8147e8f277a3562bb6c8fa772ec96218' };
+
+    (function(d, t) {
+        var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>
+<script src="/public/lib.js"></script>
+<script src="/public/z-w.js"></script>
+
+
+<!--<script type="text/javascript">_satellite.pageBottom();</script>-->
+</body>
+</html>

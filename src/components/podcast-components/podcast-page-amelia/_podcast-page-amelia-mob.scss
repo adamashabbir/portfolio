@@ -1,0 +1,94 @@
+@media(max-width: 767px) {
+
+  [data-template = "podcast-page-amelia"] {
+    .podcast-page-amelia {
+      position: relative;
+      background: white;
+
+      .podcast-page-backdrop {
+        position: relative;
+        height: 650px;
+        background-image: url('/public/img/profile/amelia-cover-two.jpg');
+        background-size: cover;
+        background-position: center;
+        .podcast-page-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, .5);
+          .podcast-page-person {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding-top: 250px;
+            font-sizE: 22px;
+          }
+        }
+      }
+
+      .podcast-title {
+        position: relative;
+        padding: 50px 0;
+        width: 300px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 28px;
+        color: grey;
+        margin: 0 auto;
+      }
+
+      .podcast-player-date {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        color: #00d4b4;
+        margin: 0 auto;
+      }
+
+      .podcast-player {
+        padding-top: 10px;
+        width: 300px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        color: grey;
+        margin: 0 auto;
+
+        .podcast-main-image {
+          position: relative;
+          height: 200px;
+          background-image: url('/public/img/profile/amelia.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+        .podcast-main-p {
+          padding-top: 50px;
+          padding-bottom: 25px;
+          font-size: 14px;
+          line-height: 24px;
+          color: grey;
+          text-align: left;
+          margin: 0 auto;
+
+          a{
+            display: inline-block;
+            text-decoration: none;
+            padding-right: 20px;
+            i{
+              color: grey;
+              cursor: pointer;
+              font-size: 20px;
+              &:hover{
+                color: #00d4b4;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

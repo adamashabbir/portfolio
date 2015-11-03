@@ -1,0 +1,44 @@
+@media(max-width: 991px){
+  [data-template = "featured-in"]{
+    .featured-in{
+      position: relative;
+      background: white;
+      .recent-feature{
+        position: relative;
+        font-size: 15px;
+        line-height: 25px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: grey;
+        border: 1px solid grey;
+        padding-top: 5px;
+        background: white;
+      }
+
+      .line{
+        height: 1px;
+        background: grey;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        right: 15px;
+      }
+
+      .logo-n{
+        position: relative;
+        height: 200px;
+        width: 30%;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

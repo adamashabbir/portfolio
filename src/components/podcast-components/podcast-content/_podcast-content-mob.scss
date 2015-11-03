@@ -1,0 +1,63 @@
+@media(max-width: 767px) {
+  [data-template ="podcast-content"] {
+      .podcast-content {
+        position: relative;
+        background: white;
+
+        .podcast-title {
+          position: relative;
+          text-align: center;
+          font-size: 25px;
+          line-height: 35px;
+          color: grey;
+          padding-top: 50px;
+        }
+
+        .podcast-tag {
+          position: relative;
+          text-align: center;
+          font-size: 15px;
+          line-height: 26px;
+          color: grey;
+          padding: 25px 25px 50px 25px;
+        }
+
+          a {
+            text-decoration: none;
+            background: white;
+            .podcast-back {
+              position: relative;
+              height: 300px;
+              background-image: url('/public/img/profile/jamie.png');
+              background-size: cover;
+              background-position: center;
+              margin: 15px 0;
+              .podcast-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0,0,0,.3);
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                  background: rgba(0,0,0,.6);
+                }
+                .podcast-name {
+                  position: relative;
+                  font-size: 35px;
+                  padding-top: 140px;
+                  padding-left: 15px;
+                  padding-right: 15px;
+                  line-height: 50px;
+                  color: white;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+
+    }
+  }

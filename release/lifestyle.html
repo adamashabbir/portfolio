@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="//assets.adobedtm.com/9b346bffe2591722c64f88bf101c0664c8936e16/satelliteLib-93e274c58a6ad1ed12b80e4d8c0a01144cd6e324.js"></script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Zander Whitehurst</title>
+
+    <link rel="stylesheet" href="/public/lib.css"/>
+    <link rel="stylesheet" href="/public/z-w.css"/>
+    <link rel="stylesheet" href="/public/fonts/fonts.css"/>
+    <link rel="stylesheet" href="/public/fontawesome/css/font-awesome.min.css"/>
+    <link rel="shortcut icon"
+          href="http://zanderwhitehurst.co/favicon-z.ico"
+          type="image/x-icon" />
+
+    <meta property="og:title"
+          content="Zander Whitehurst | Lifestyle" />
+
+
+    <meta property="og:url"
+          content="http://www.zanderwhitehurst.co/lifestyle.html" />
+
+    <meta property="og:description" content=" Zander is obsessed with optimising rare time. He is an ultra marathon runner and currently training for the
+            worlds toughest footrace. Zanders visual blog includes short sharp posts briefly summarising his life in
+            startups and on startlines." />
+
+
+    <meta property="og:image"
+          content="http://zanderwhitehurst.co/public/img/profile/z-run.jpg" />
+
+    <meta property="og:image"
+          content="http://zanderwhitehurst.co/public/img/profile/z-surf-two.png" />
+
+
+</head>
+<body data-ng-app="z-w" class="<%= content.class %>">
+<div data-template="menu" data-ng-controller="MenuCtrl">
+    <div class="menu-nav">
+        <div class="nav-header">
+            <div class="nav-close">
+                <div class="fa fa-times"></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="tabs"> <i class="fa fa-home"></i>HOME</a></li>
+            <li><a href="http://codelounge.xyz" target="_blank" class="tabs">  <i class="fa fa-code"></i> LEARN</a></li>
+            <li><a href="/lifestyle.html" class="tabs"> <i class="fa fa-camera"></i> BLOG</a></li>
+            <li><a href="/podcast.html" class="tabs"> <i class="fa fa-headphones"></i> PODCAST</a></li>
+            <li><a href="/bio.html" class="tabs">  <i class="fa fa-heart"></i> LIFE</a></li>
+            <li><a href="/press.html" class="tabs">  <i class="fa fa-newspaper-o"></i> APPS</a></li>
+        </ul>
+        <div class="social">
+            <li>
+                <a class="first" href="http://twitter.com/zwhitehurst" target="_blank"><i class="fa fa-twitter social-icons"></i></a>
+                <a href="http://linkedin.com/zanderwhitehurst" target="_blank"><i class="fa fa-linkedin social-icons"></i></a>
+                <a href="http://github.com/zanderwhitehurst" target="_blank"><i class="fa fa-github social-icons"></i></a>
+                <a href="http://instagram.com/zanderwhitehurst" target="_blank"><i class="fa fa-instagram social-icons"></i></a>
+            </li>
+        </div>
+    </div>
+</div>
+<div data-template="header" data-ng-controller="HeaderCtrl">
+    <div class="header">
+        <div class="logo">
+            <div class="name">
+                <a href="/index.html">
+                ZANDER<span>WHITEHURST</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/advertise.html">
+                <i class="fa fa-star-o"></i>
+                AD
+            </a>
+        </div>
+
+
+        <div class="header-tabs">
+            <a href="/bio.html">
+                <i class="fa fa-play"></i>
+                STORY
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/lifestyle.html">
+                <i class="fa fa-heart"></i>
+                LIFE
+            </a>
+        </div>
+        <div class="header-tabs">
+            <a href="/podcast.html">
+                <i class="fa fa-headphones"></i>
+                LISTEN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/blog.html">
+                <i class="fa fa-code"></i>
+                LEARN
+            </a>
+        </div>
+
+        <div class="header-tabs">
+            <a href="/products.html">
+                <i class="fa fa-lightbulb-o"></i>
+                LAUNCH
+            </a>
+        </div>
+
+       <!-- <div class="menu-btn">
+            <div class="fa fa-bars"></div>
+            &lt;!&ndash;<div class="menu-txt">Menu</div>&ndash;&gt;
+        </div>-->
+
+        <div class="mobile-nav">
+            <div class="mini-tabs">
+                <a href="/index.html">
+                    <i class="fa fa-home"></i>
+                    HOME
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/bio.html">
+                    <i class="fa fa-play"></i>
+                    STORY
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/lifestyle.html">
+                    <i class="fa fa-heart"></i>
+                    LIFE
+                </a>
+            </div>
+            <div class="mini-tabs">
+                <a href="/podcast.html">
+                    <i class="fa fa-headphones"></i>
+                    LISTEN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/blog.html">
+                    <i class="fa fa-code"></i>
+                    LEARN
+                </a>
+            </div>
+
+            <div class="mini-tabs">
+                <a href="/products.html">
+                    <i class="fa fa-lightbulb-o"></i>
+                    LAUNCH
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-template="lifestyle-hero" data-ng-controller="LifestyleHeroCtrl">
+    <div class="lifestyle-hero">
+        <div class="lightbox" id="text">
+
+            <div class="box">
+                <a class="close" href="#"><i class="fa fa-times"></i></a>
+
+                <div class="title">
+                   Howdy superstar, lets connect
+                </div>
+
+                <div class="content">
+                    <br><br>
+                    <a class="twitter-follow-button"
+                       href="https://twitter.com/zwhitehurst"
+                       data-size="large"
+                            data-show="true">
+                        </a>
+                </div>
+
+        </div>
+        </div>
+        <div class="overlay-lifestyle">
+            <div class="lifestyle-icon">
+                <i class="fa fa-heart"></i>
+            </div>
+            <div class="lifestyle-tag">
+                LIFESTYLE
+            </div>
+            <a href="#lifestyle-blog" target="_blank">
+                <div class="lifestyle-p">
+                    JOIN THE JOURNEY <i class="fa fa-chevron-down"></i>
+                </div>
+            </a>
+             </div>
+    </div>
+</div>
+<div data-template="lifestyle-blog" data-ng-controller="LifestyleBlogCtrl">
+    <div class="lifestyle-blog" id="lifestyle-blog">
+        <div class="lifestyle-title">
+            GRIP IT & RIP IT
+        </div>
+        <div class="lifestyle-p">
+            Zander is obsessed with optimising rare time. He is an ultra marathon runner and currently training for the
+            worlds toughest footrace. Zanders visual blog includes short sharp posts briefly summarising his life in
+            startups and on startlines.
+        </div>
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/frieze.webm" type="video/webm">
+                <source src="public/img/profile/frieze.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post two">
+                Flair at the Frieze Art Fair.
+                <br><br>
+                Having studied Fine Art I enjoy critiquing exhibitions. Predictably this years Frieze curation was flat.
+                The contemporary tent was packed with oil and acrylic canvases. Given it is 2015, I associate
+                'contemporary' with interactive installations that arouse multiple senses.
+            </div>
+
+        </div>
+
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/3d.webm" type="video/webm">
+                <source src="public/img/profile/3d.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post two">
+                It's getting hot in here, so 3D print all of your clothes.
+                <br><br>
+                First print with the crowdfunded craftbot. This print is a simple arduino case using black ABS.
+                Household printers are still embryonic in their existence. My passion is embedding data into everyday
+                objects meshing python with rhino.
+            </div>
+
+        </div>
+
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/surf.webm" type="video/webm">
+                <source src="public/img/profile/surf.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post">
+                Surfing the web is often negatively distracting and a waste of crucial rare time.
+                Surfing mother natures web of waves is distracting for all the right reasons.
+                <br><br>
+                I began surfing seven days ago. I have fallen in love. Admittedly I spend 10+ hours a day surfing
+                my macbook. On a daily basis I stare at images beneath glass and casually flick, ergonomically advanced,
+                warm buttons. As you can imagine the tactile pleasure I get from this routine is fairly limiting.
+                <br><br>
+                <span>
+                I gained more pleasure from one afternoon of surfing than one thousand hours of surfing my macbook. Surfing is the
+                hardest sport I have ever done.
+                <br><br>
+                For those of you who don’t know the key to being a good developer is surfing the web effectively. I can
+                do this because of practice and failure. Now I am determined to master the waves.
+                        </span>
+            </div>
+
+        </div>
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/health.webm" type="video/webm">
+                <source src="public/img/profile/health.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post two">
+                It's time to freshen up with some earthy Ginger and Chilli; health is wealth.
+                <br><br>
+                London is losing its Summer feeling. A mug of this a day will keep the sniffles at bay. It is absolutely
+                crucial with training increasing to 40-60 miles a week to stay fresh and healthy.
+            </div>
+
+        </div>
+
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/food.webm" type="video/webm">
+                <source src="public/img/profile/food.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post two">
+                Following a flipping dip in temperatures this vietnamese food market, just up from Farringdon, is the
+                perfect sinus blaster.
+                <br><br>
+                For me, street markets offer the freshest alternative to a pre-sunrise prepped packed lunch.
+            </div>
+
+        </div>
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/focus.webm" type="video/webm">
+                <source src="public/img/profile/focus.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post two">
+                The joy of coding is that it can be done anywhere and anytime.
+                <br><br>
+                My preference is standing but every once in a while I pop a squat and bust out a few lines here and
+                there.
+                <br><br>
+                My favorite place to code is up in the sky, on airplanes or zooming through the towns on bullet trains.
+                The confusion when you load your localhost is always overwhelmingly entertaining.
+            </div>
+
+        </div>
+
+        <div class="vid-container">
+            <video loop muted id="bgvid">
+                <source src="public/img/profile/pol.webm" type="video/webm">
+                <source src="public/img/profile/pol.mp4" type="video/mp4">
+            </video>
+
+            <div class="blog-post three">
+                Making a splash on the pool table. It is such a social feature in any startup and usually the best
+                canvas for brainstorming.
+                <br><br>
+                A lot of my best ideas stem from conversations and tactile experiences. Blank pieces of paper are more
+                like fire blankets, restricting the creative flames.
+            </div>
+
+        </div>
+        <div class="discuss-box">
+        <div id="disqus_thread"></div>
+        </div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+             var disqus_config = function () {
+             this.page.url = http://www.zanderwhitehurst.co/blog/why-i-turned-down-a-job-from-google.html;  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+             */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//zanderwhitehurst.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        <script id="dsq-count-scr" src="//zanderwhitehurst.disqus.com/count.js" async></script>
+
+    </div>
+</div>
+
+</div>
+</div>
+<div data-template ="email-health">
+    <div class="email-health">
+    <div class="col-md-12">
+        <div class="stay">UNLEASH YOUR BEST SELF TODAY</div>
+            <!--<form action="#">
+                <div class="input">
+                    <input type="text" class="button" id="email" name="email" placeholder="Add email">
+                    <input type="submit" class="button" id="submit" value="SIGN UP">
+                </div>
+            </form>-->
+
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+                <form action="//xyz.us11.list-manage.com/subscribe/post?u=0f08ae7e014c18f2429bd8d1f&amp;id=24cb829a9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="text" value="" name="FNAME"  id="mce-FNAME" placeholder="FIRST NAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ENTER EMAIL ADDRESS">
+                        </div>
+                        <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-btn-health"></div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_0f08ae7e014c18f2429bd8d1f_24cb829a9c" tabindex="-1" value=""></div>
+                    </div>
+                </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+
+    </div>
+</div>
+</div>
+ <div data-template = "hero-recent" >
+ <div class="hero-recent">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-podcast">
+             RECENT PODCASTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    AMELIA WINGER BEARSKIN
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3">
+         <a href="/podcast.html">
+         <div class="podcast-backdrop" style=" background-image: url('/public/img/profile/z-podcast.jpg');">
+             <div class="podcast-small-overlay">
+                 <div class="podcast-name">
+                    STARTUPS & STARTLINES
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+ <div data-template = "hero-recent-project" >
+ <div class="hero-recent-project">
+     <div class="col-md-12">
+         <div class="line">
+
+         </div>
+         <div class="recent-project">
+             RECENT PRODUCTS
+         </div>
+     </div>
+
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rect-06 -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="3207131903"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop"   style=" background-image: url('/public/img/projects/background-cp.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                        COMMON PENCE
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+
+     <div class="col-md-3">
+         <a href="/products.html">
+         <div class="product-backdrop" style=" background-image: url('/public/img/projects/background-h@.jpg');">
+             <div class="product-small-overlay">
+                 <div class="product-name">
+                     H@
+                 </div>
+             </div>
+         </div>
+         </a>
+     </div>
+     <div class="col-md-3 hidden-xs hidden-sm">
+         <div class="ad-block" style="text-align: center">
+             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- rectangle -->
+             <ins class="adsbygoogle"
+                  style="display:inline-block;width:300px;height:250px"
+                  data-ad-client="ca-pub-9230205567828830"
+                  data-ad-slot="6498675501"></ins>
+             <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+             </script>
+         </div>
+     </div>
+ </div>
+
+
+ </div>
+<div data-template = "code-banner">
+    <div class="col-md-12 pad">
+    <div class="code-banner">
+        <div class="code-banner-text">
+           LEARN THE FUNDAMENTALS OF STARTUPS AND HOW TO CODE, IN COMFORT!
+        </div>
+        <a href="http://codelounge.xyz">
+        <div class="code-banner-join">
+                JOIN CODE LOUNGE <i class="fa fa-chevron-right"></i>
+        </div>
+        </a>
+    </div>
+    </div>
+</div>
+<!--footer.ejs-->
+<div data-template="footer">
+    <footer id="footer">
+        <div class="col-md-12 footer-tag">
+            <a class="social-foot" href="http://twitter.com/zwhitehurst" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="social-foot" href="http://instagram.com/zanderwhitehurst" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="social-foot" href="https://uk.linkedin.com/in/zanderwhitehurst" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="social-foot" href="https://soundcloud.com/ZanderWhitehurst">
+                <i class="fa fa-soundcloud"></i>
+            </a>
+            <a class="social-foot" href="https://github.com/ZanderWhitehurst">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68575506-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    var vglnk = { key: '8147e8f277a3562bb6c8fa772ec96218' };
+
+    (function(d, t) {
+        var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>
+<script src="/public/lib.js"></script>
+<script src="/public/z-w.js"></script>
+
+
+<!--<script type="text/javascript">_satellite.pageBottom();</script>-->
+</body>
+</html>

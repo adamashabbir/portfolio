@@ -1,0 +1,62 @@
+@media(max-width: 991px){
+  [data-template = "hero-recent-post"]{
+    .hero-recent-post{
+      background: white;
+      position: relative;
+      .post-podcast {
+        position: relative;
+        font-size: 15px;
+        line-height: 25px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: grey;
+        border: 1px solid grey;
+        padding-top: 5px;
+        background: white;
+      }
+
+      .line{
+        height: 1px;
+        background: grey;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        right: 15px;
+      }
+      a {
+        text-decoration: none;
+        .post-backdrop {
+          position: relative;
+          height: 250px;
+          background-size: cover;
+          background-position: center;
+          background-image: url('/public/img/profile/sinus-post.jpg');
+
+          .post-small-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .5);
+            cursor: pointer;
+            &:hover {
+              background: rgba(0, 0, 0, .7);
+            }
+            .post-name {
+              position: relative;
+              font-size: 25px;
+              line-height: 35px;
+              color: white;
+              padding-top: 110px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,392 @@
+@media(max-width: 767px){
+  [data-template="hero"]{
+
+    .hub-hero {
+      //margin-top: 60px;
+      height: 1650px;
+      position: relative;
+
+      .lightbox {
+        /** Hide the lightbox */
+        display: none;
+
+        /** Apply basic lightbox styling */
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color:#333333;
+        background: rgba(255,255,255,.6);
+      }
+
+      .lightbox:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .lightbox .box {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        min-width:300px;
+        margin: 20px auto;
+        padding:20px;
+        top: 25%;
+        background-color:rgba(0,0,0,.7);
+        box-shadow: 0px 1px 26px -3px #777777;
+      }
+
+      .lightbox .title {
+        margin:0;
+        padding:0 0 10px 0;
+        border-bottom:1px #ccc solid;
+        font-size:22px;
+        color: white;
+        text-align: center;
+      }
+
+      .lightbox .content {
+        display:block;
+        padding:25px 0 0 0;
+        font-size:18px;
+        line-height:22px;
+        text-align: center;
+        color: white;
+        span{
+          color: #00d4b4;
+        }
+        image{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .lightbox .close {
+        float:right;
+        display:block;
+        text-decoration:none;
+        font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:22px;
+        color:white;
+        i{
+          color: white;
+        }
+      }
+
+      .lightbox .open {
+        /** Show lightbox when mouse leaves the browser window */
+        display: block;
+        outline: none;
+      }
+      #mc_embed_signup {
+        background: none;
+        clear: left;
+        font-size: 14px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #mc_embed_signup .mc-field-group input {
+        background: white;
+        height: 40px;
+        font-size: 15px;
+        padding-top: 11px;
+        width: 300px;
+        margin: 0 auto;
+        color: grey;
+      }
+      #mc_embed_signup .mc-field-group {
+        clear: left;
+        position: relative;
+        padding-bottom: 3%;
+        min-height: 50px;
+      }
+
+      #mc_embed_signup_scroll {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      #mc_embed_signup input.button {
+        clear: both;
+        background: #00d4b4;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: 300px;
+        margin: 0 auto;
+        &:hover{
+          background: #00d4b4;
+        }
+
+      }
+
+      #mc_embed_signup div.mce_inline_error {
+        padding: 5px 10px;
+        width: 300px;
+        background-color: #EF3A5D;
+        font-weight: bold;
+        z-index: 1;
+        color: #fff;
+      }
+
+      #mc_embed_signup #mce-success-response {
+        color: grey;
+        font-size: 10px;
+        text-align: center;
+        display: none;
+        background: none;
+        width: 100%;
+        padding: 0 0;
+      }
+
+      #mc_embed_signup div#mce-responses {
+        float: left;
+        top: -1.4em;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        clear: both;
+        padding: 0 10px;
+      }
+
+      #mc_embed_signup form {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+      }
+
+      .hero-main {
+        height: 600px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/public/img/profile/z.jpg');
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          /* background: #ffc200;*/
+          background: rgba(0, 0, 0, .4);
+          transition: 0.5s;
+
+          /*  .hub-hero-txt {
+              color: #f4f4f4;
+              font-size: 45px;
+              text-align: center;*/
+          &:hover{
+            background: rgba(0, 0, 0, .1);
+            .hero-main-p{
+              &:hover {
+
+                background: #ffc200;
+              }
+            }
+
+          }
+
+          i{
+            position: relative;
+            padding-top: 200px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+          }
+
+          .hero-main-tag{
+            position: relative;
+            color: white;
+            font-size: 40px;
+            line-height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 15px;
+
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+          .hero-main-p{
+            position: relative;
+            font-size: 15px;
+            line-height: 35px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 5px;
+            width: 250px;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            i{
+              display: inline;
+              font-size: 15px;
+              line-height: 35px;
+              padding-left: 5px;
+            }
+            }
+
+          }
+
+          .tag {
+            position: absolute;
+            text-align: center;
+            top: 250px;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            line-height: 50px;
+          }
+
+          .about {
+            position: absolute;
+            text-align: center;
+            top: 350px;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            margin-bottom: 30px;
+            font-size: 33px;
+            line-height: 45px;
+
+          }
+
+          .jump {
+            position: absolute;
+            text-align: center;
+            top: 450px;
+            font-size: 30px;
+            line-height: 45px;
+            color: white;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            a {
+              text-decoration: none;
+
+              span {
+                color: #EF5B82;
+                cursor: pointer;
+                &:hover {
+                  color: #D65476;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .pad{
+      padding: 0;
+
+      .back-l-one, .back-l-two, .back-l-three {
+        position: relative;
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/public/img/profile/z-work.jpg');
+
+
+        .overlay-small {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          /* background: #ffc200;*/
+          background: rgba(0, 0, 0, .4);
+          margin: 0 auto;
+          transition: 0.5s;
+
+          &:hover{
+            background: rgba(0, 0, 0, .1);
+            .hero-p{
+              &:hover {
+                cursor: pointer;
+
+                background: #ffc200;
+              }
+            }
+
+          }
+
+          i{
+            position: relative;
+            padding-top: 110px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+          }
+
+          .hero-tag{
+            position: relative;
+            color: white;
+            font-size: 30px;
+            line-height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 15px;
+
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+          .hero-p{
+            position: relative;
+            font-size: 12px;
+            line-height: 25px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 5px;
+            width: 200px;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            i{
+              display: inline;
+              font-size: 11px;
+              line-height: 25px;
+              padding-left: 5px;
+            }
+            }
+
+          }
+
+        }
+      }
+
+      .back-l-two{
+        background-image: url('/public/img/profile/z-listen.jpg');
+      }
+
+      .back-l-three{
+        background-image: url('/public/img/profile/z-surf-two.jpg');
+      }
+
+
+    }
+
+  }
+}

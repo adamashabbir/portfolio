@@ -1,0 +1,165 @@
+[data-template = "blog-post-003"]{
+  .blog-post-hero{
+    position: relative;
+    height: 650px;
+    background: url('/public/img/profile/bond.jpg');
+    background-size: cover;
+    background-position: center;
+    .blog-post-hero-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .7);
+      .read-time{
+        font-size: 15px;
+        line-height: 25px;
+        color: white;
+        padding: 25px 0 25px 0;
+        text-align: center;
+      }
+      .blog-post-title {
+        font-size: 50px;
+        line-height: 60px;
+        color: white;
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+
+  .share{
+    position: relative;
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+
+  .blog-post-social{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    a {
+      margin: 0 10px;
+      padding: 10px 3px;
+      text-decoration: none;
+      background: #486dab;
+      cursor: pointer;
+      &:hover {
+       border-bottom: 5px solid rgba(0,0,0,.5);
+      }
+
+      i {
+        display: inline-block;
+        font-size: 15px;
+        margin: 0 15px;
+        color: white;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+    }
+
+  }
+
+  .blog-post-content{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    .blog-post-date{
+      font-size: 20px;
+      line-height: 45px;
+      color: #00d4b4;
+      text-align: left;
+      padding: 50px 0 0 0;
+    }
+    .blog-post-subtitle{
+      font-size: 35px;
+      line-height: 45px;
+      color: dimgrey;
+      text-align: left;
+      padding: 50px 0 50px 0;
+
+    }
+
+
+    .blog-post-content{
+      font-size: 20px;
+      line-height: 30px;
+      color: grey;
+      text-align: left;
+      padding-bottom: 50px;
+      .key{
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #00d4b4;
+        color: grey;
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover{
+          background: #00d4b4;
+          color: white;
+        }
+      }
+      span{
+        font-size: 12px;
+        padding-top: 10px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .title{
+        font-size: 30px;
+        line-height: 45px;
+        color: dimgrey;
+        text-align: left;
+      }
+      img{
+        width: 100%;
+        height: auto;
+
+      }
+    }
+
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #disqus_thread {
+    position: relative;
+  }
+  #disqus_thread:after {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: white;
+  }
+
+}

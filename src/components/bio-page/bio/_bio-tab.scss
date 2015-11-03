@@ -1,0 +1,66 @@
+@media (max-width: 991px){
+  [data-template="bio"]{
+    .bio {
+
+      .pad {
+        padding: 0;
+
+        .bio-title-backdrop {
+          height: 300px;
+          background: #f0f5f2;
+
+          .bio-page-title {
+            text-align: center;
+            font-size: 45px;
+            line-height: 50px;
+            color: #647370;
+            padding-top: 125px;
+            padding-bottom: 10px;
+
+          }
+
+
+
+          .bio-underline{
+            height: 5px;
+            background: #647370;
+            width: 70px;
+
+            margin: 0 auto;
+          }
+        }
+
+        .bio-tag-01 {
+          position: relative;
+          text-align: center;
+          font-size: 30px;
+          line-height: 45px;
+          padding: 0 100px;
+          margin: 100px 0;
+          color: #647370;
+          display: none;
+        }
+
+        .z-bio-block {
+          position: relative;
+          text-align: center;
+          color: #647370;
+
+          .z-bio-icon{
+            padding-top: 50px;
+          }
+
+          .z-bio-tag{
+            font-size: 18px;
+            padding: 0 150px;
+            line-height: 30px;
+            margin-top: 50px;
+            padding-bottom: 100px;
+          }
+
+        }
+
+      }
+    }
+  }
+}

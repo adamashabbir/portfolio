@@ -1,0 +1,64 @@
+@media (max-width: 767px){
+  [data-template = "lifestyle-blog"] {
+    .lifestyle-blog {
+      position: relative;
+      background: white;
+
+      .lifestyle-title {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        color: grey;
+      }
+      .lifestyle-p {
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+        color: grey;
+        padding: 50px 25px 100px 25px;
+      }
+
+      .vid-container {
+        position: relative;
+        height: auto;
+        margin-top: -9px;
+
+        #bgvid {
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: auto;
+        }
+
+        .blog-post, .two, .three {
+          position: absolute;
+          left: 50%;
+          width: 310px;
+          font-size: 8px;
+          line-height: 16px;
+          color: white;
+          top: 25px;
+          padding: 0 25px 0 25px;
+          margin-left: -155px;
+          text-align: center;
+          span{
+            display: none;
+          }
+        }
+
+        .two{
+          top: 25px;
+
+        }
+      }
+      .discuss-box{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+    }
+  }
+}
