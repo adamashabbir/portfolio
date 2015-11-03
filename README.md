@@ -6,9 +6,9 @@
 
 ######Run these commands once you have cloned the repository.
 
-``` npm install node ``` <br />
-``` npm install gulp``` <br />
-``` npm install bower``` <br />
+``` npm install ``` <br />
+``` bower install``` <br />
+``` gulp``` <br />
 ``` gulp watch```
 
 VOILA
