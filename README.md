@@ -8,7 +8,7 @@
 
 ``` npm install node ``` <br />
 ``` npm install gulp``` <br />
-``` ppm install bower``` <br />
+``` npm install bower``` <br />
 ``` gulp watch```
 
 VOILA
