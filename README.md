@@ -4,10 +4,12 @@ Digital Portfolio of products, my podcast and blog posts. I encourage anyone to 
 
 # Install
 
-Run nom install node
-Run npm install gulp
-Run bpm install bower
-Run gulp watch
+Run these commands once you have cloned the repository.
+
+``` npm install node ```
+``` npm install gulp```
+``` ppm install bower```
+``` gulp watch```
 
 VOILA
 
